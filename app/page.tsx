@@ -40,7 +40,7 @@ export default function HomePage() {
 
   const countdownText = useMemo(() => {
     if (days === null) return 'Disponible en Telegram';
-    return `Faltan ${days} días`;
+    return ``;
   }, [days]);
 
   const handleCopy = useCallback(async () => {
@@ -103,10 +103,7 @@ export default function HomePage() {
             <span className="text-xs uppercase tracking-[0.3em] text-black/60">Lugar</span>
             <Scramble placeholder="████ — disponible en Telegram" unlocked={ctaEngaged} />
           </div>
-          <div className="md:col-span-2 flex flex-col gap-2">
-            <span className="text-xs uppercase tracking-[0.3em] text-black/60">Estado</span>
-            <p className="text-lg font-semibold">{countdownText}</p>
-          </div>
+
         </section>
 
         <section className="flex w-full max-w-4xl flex-col gap-6">
@@ -135,10 +132,47 @@ export default function HomePage() {
           <p>Evento sin fines de lucro. Código y materiales bajo licencias abiertas.</p>
           <details className="mt-6 border border-black/30 p-6">
             <summary className="cursor-pointer text-sm uppercase tracking-[0.3em]">Ver código</summary>
-            <div className="mt-4 space-y-1 text-sm">
-              <p>Tecnología abierta para el Sur.</p>
-              <p>Autonomía digital y colaboración.</p>
-              <p>Comunidades antes que plataformas.</p>
+            <div className="mt-4 space-y-3 text-sm leading-relaxed">
+              <p>
+                Bienvenidos, ciudadanos y ciudadanas del futuro. Si están leyendo esto, es por que seguramente nos une una misma inquietud: Latinoamérica no puede seguir siendo espectadora del porvenir.
+              </p>
+              <p>
+                Estamos en un momento decisivo. La cuarta revolución industrial y la Web3 redefinen poder, conocimiento y libertad. Nuestro propósito es participar activamente en la creación de ese futuro desde nuestra identidad, creatividad y soberanía.
+              </p> 
+              <p>
+                Durante siglos, el continente fue tratado como proveedor de materias primas y mano de obra barata. Hoy la lógica se repite en lo digital: exportamos datos crudos y minerales para chips, importamos tecnología terminada y las grandes plataformas concentran el poder.
+              </p>
+              <p>
+                Pero esta vez contamos con herramientas, conciencia y redes para cambiar la historia. Creemos en una Latinoamérica soberana, interconectada y capaz de producir su propio conocimiento tecnológico.
+              </p>
+              <div>
+                <p className="font-semibold">Defendemos:</p>
+                <ul className="mt-2 list-disc space-y-1 pl-6">
+                  <li>La autonomía tecnológica como derecho colectivo.</li>
+                  <li>La colaboración entre comunidades, artistas, desarrolladores y diseñadores como fuerza transformadora.</li>
+                  <li>La innovación abierta, descentralizada y ética al servicio del bien común.</li>
+                  <li>La identidad cultural latinoamericana como motor creativo y de resistencia.</li>
+                </ul>
+              </div>
+              <p>
+                Imaginamos un continente que no solo consuma el futuro, sino que lo diseñe, programe y gobierne. Queremos construir herramientas, redes y espacios que empoderen a las comunidades locales y fortalezcan la soberanía de nuestros datos.
+              </p>
+              <p>
+                Convocamos a programadores, diseñadores, artistas, investigadores y soñadores a sumarse al colectivo. Escuchemos, pensemos y construyamos una agenda común.
+              </p>
+              <p>
+                Mientras tanto, difundamos esta iniciativa y llevémosla a cada espacio: TecWeek, SAIAconf, DevConnect y cualquier lugar donde la tecnología defina el mañana. Si querés sumar o colaborar, escribinos. Esto recién comienza.
+              </p>
+              <p className="font-semibold">
+                La soberanía no se hereda, se construye. Latinoamérica tiene todo para ser protagonista del futuro digital: hagámoslo posible, juntas y juntos.
+              </p>
+              <p>
+                Por:
+                <ul className="mt-2 list-disc space-y-1 pl-6">
+                  <li>Colectivo por la Soberanía Latinoamericana del Futuro (COSLAT)</li>
+                </ul>
+              </p>
+
             </div>
           </details>
         </footer>
