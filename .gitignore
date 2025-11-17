@@ -1,2 +1,11 @@
 /.DS_Store
 /firebase-debug.log
+/node_modules
+/.next
+/out
+/tmp
+/dist
+/coverage
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
