@@ -9,3 +9,5 @@
 /npm-debug.log*
 /yarn-debug.log*
 /yarn-error.log*
+app/.DS_Store
+.firebase/hosting.b3V0.cache

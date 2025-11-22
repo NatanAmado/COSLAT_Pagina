@@ -10,6 +10,8 @@ import { daysUntilTarget } from '../lib/countdown';
 import { ensureAnalytics } from '../lib/firebaseClient';
 
 const telegramInvite = process.env.NEXT_PUBLIC_TELEGRAM_INVITE ?? 'https://t.me/+OLmS8nfAo34zMTE0';
+const lumaEventUrl = 'https://lu.ma/3bkjsi4a';
+const lumaEmbedUrl = 'https://lu.ma/embed/3bkjsi4a?theme=light&primaryColor=000000';
 
 export default function HomePage() {
   const [brandLoud, setBrandLoud] = useState(false);
@@ -128,6 +130,27 @@ export default function HomePage() {
           </p>
         </section>
 
+        <section className="w-full max-w-4xl space-y-4">
+          <p className="text-xs uppercase tracking-[0.3em] text-black/60">Registro</p>
+          <div className="border border-black/30 bg-white/90 p-2">
+            <iframe
+              title="Registro en Luma"
+              src={lumaEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-[780px] w-full border-0"
+              allow="payment *; fullscreen"
+            />
+          </div>
+          <p className="text-xs text-black/60">
+            Si el módulo no carga,{' '}
+            <a href={lumaEventUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
+              abre el registro en Luma
+            </a>
+            .
+          </p>
+        </section>
+
         <footer className="w-full max-w-4xl text-xs text-black/60">
           <p>Evento sin fines de lucro. Código y materiales bajo licencias abiertas.</p>
           <details className="mt-6 border border-black/30 p-6">
@@ -166,12 +189,12 @@ export default function HomePage() {
               <p className="font-semibold">
                 La soberanía no se hereda, se construye. Latinoamérica tiene todo para ser protagonista del futuro digital: hagámoslo posible, juntas y juntos.
               </p>
-              <p>
-                Por:
+              <div>
+                <p>Por:</p>
                 <ul className="mt-2 list-disc space-y-1 pl-6">
                   <li>Colectivo por la Soberanía Latinoamericana del Futuro (COSLAT)</li>
                 </ul>
-              </p>
+              </div>
 
             </div>
           </details>
