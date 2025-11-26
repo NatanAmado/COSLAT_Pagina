@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Cpu, Globe, Users, Target, Menu } from "lucide-react";
+import { Cpu, Globe, Users, Target, Menu, CalendarRange, FolderGit2 } from "lucide-react";
 
 export default function Sidebar() {
   const navItems = [
@@ -8,6 +8,8 @@ export default function Sidebar() {
     { name: "PRINCIPIOS", href: "#principios", icon: <Cpu size={20} /> },
     { name: "ESTRUCTURA", href: "#estructura", icon: <Users size={20} /> },
     { name: "FINES", href: "#fines", icon: <Target size={20} /> },
+    { name: "EVENTOS", href: "/eventos", icon: <CalendarRange size={20} /> },
+    { name: "PROYECTOS", href: "/proyectos", icon: <FolderGit2 size={20} /> },
   ];
 
   return (
