@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-const USER = process.env.ADMIN_USER || "admin";
-const PASS = process.env.ADMIN_PASS || "changeme";
+const USER = process.env.ADMIN_USER;
+const PASS = process.env.ADMIN_PASS;
 
 function unauthorized() {
   return new NextResponse("Auth required", {
@@ -15,11 +15,15 @@ export function middleware(request: NextRequest) {
 
   const isAdminRoute = pathname.startsWith("/admin");
   const isProtectedApi =
-    (pathname.startsWith("/api/events") || pathname.startsWith("/api/projects")) &&
-    request.method !== "GET";
+    pathname.startsWith("/api/events") || pathname.startsWith("/api/projects");
 
   if (!isAdminRoute && !isProtectedApi) {
     return NextResponse.next();
+  }
+
+  // If credentials are not configured, refuse access
+  if (!USER || !PASS) {
+    return new NextResponse("Admin credentials not configured", { status: 500 });
   }
 
   const auth = request.headers.get("authorization");
