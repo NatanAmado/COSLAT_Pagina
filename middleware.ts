@@ -2,45 +2,65 @@ import { NextResponse, type NextRequest } from "next/server";
 
 const USER = process.env.ADMIN_USER;
 const PASS = process.env.ADMIN_PASS;
+const COOKIE_NAME = "admin_auth";
+const TOKEN = USER && PASS ? `${USER}:${PASS}` : null;
 
-function unauthorized() {
-  return new NextResponse("Auth required", {
-    status: 401,
-    headers: { "WWW-Authenticate": 'Basic realm="Admin"' },
-  });
+function unauthorizedJson() {
+  return NextResponse.json({ error: "Auth required" }, { status: 401 });
 }
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const isAdminRoute = pathname.startsWith("/admin");
-  const isProtectedApi =
-    pathname.startsWith("/api/events") || pathname.startsWith("/api/projects");
+  const isProtectedApi = pathname.startsWith("/api/events") || pathname.startsWith("/api/projects");
+  const isAuthEndpoint = pathname.startsWith("/api/auth/login");
+  const isLoginPage = pathname.startsWith("/login");
+
+  if (isAuthEndpoint || isLoginPage) {
+    return NextResponse.next();
+  }
 
   if (!isAdminRoute && !isProtectedApi) {
     return NextResponse.next();
   }
 
-  // If credentials are not configured, refuse access
-  if (!USER || !PASS) {
-    return new NextResponse("Admin credentials not configured", { status: 500 });
+  if (!USER || !PASS || !TOKEN) {
+    if (isProtectedApi) {
+      return NextResponse.json({ error: "Admin credentials not configured" }, { status: 503 });
+    }
+    const url = request.nextUrl.clone();
+    url.pathname = "/login";
+    url.searchParams.set("error", "missing_creds");
+    return NextResponse.redirect(url);
   }
 
-  const auth = request.headers.get("authorization");
-  if (!auth || !auth.startsWith("Basic ")) {
-    return unauthorized();
+  const cookie = request.cookies.get(COOKIE_NAME)?.value;
+  const hasValidCookie = cookie === TOKEN;
+
+  if (hasValidCookie) {
+    return NextResponse.next();
   }
 
-  const decoded = Buffer.from(auth.split(" ")[1], "base64").toString();
-  const [user, pass] = decoded.split(":");
-
-  if (user !== USER || pass !== PASS) {
-    return unauthorized();
+  if (isProtectedApi) {
+    return unauthorizedJson();
   }
 
-  return NextResponse.next();
+  const url = request.nextUrl.clone();
+  url.pathname = "/login";
+  url.searchParams.set("redirect", pathname);
+  return NextResponse.redirect(url);
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/api/events/:path*", "/api/projects/:path*"],
+  matcher: [
+    "/admin",
+    "/admin/:path*",
+    "/api/events",
+    "/api/events/:path*",
+    "/api/projects",
+    "/api/projects/:path*",
+    "/login",
+    "/api/auth/login",
+  ],
 };

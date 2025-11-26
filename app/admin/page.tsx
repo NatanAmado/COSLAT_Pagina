@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import type { EventItem } from "@/lib/events";
 import type { ProjectItem } from "@/lib/projects";
 import { ArrowRight } from "lucide-react";
@@ -21,13 +22,19 @@ type FormProject = {
   link: string;
 };
 
-async function fetchJSON<T>(url: string): Promise<T> {
+async function fetchJSON<T>(url: string): Promise<{ data: T; status: number }> {
   const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error("Failed to load " + url);
-  return res.json() as Promise<T>;
+  if (!res.ok) {
+    const err: any = new Error("Failed");
+    err.status = res.status;
+    throw err;
+  }
+  const json = (await res.json()) as T;
+  return { data: json, status: res.status };
 }
 
 export default function AdminPage() {
+  const router = useRouter();
   const [events, setEvents] = useState<EventItem[]>([]);
   const [projects, setProjects] = useState<ProjectItem[]>([]);
   const [eventForm, setEventForm] = useState<FormEvent>({ title: "", date: "", location: "", tag: "", link: "" });
@@ -44,12 +51,16 @@ export default function AdminPage() {
   useEffect(() => {
     (async () => {
       try {
-        const eventsData = await fetchJSON<{ events: EventItem[] }>("/api/events");
-        const projectsData = await fetchJSON<{ projects: ProjectItem[] }>("/api/projects");
+        const { data: eventsData } = await fetchJSON<{ events: EventItem[] }>("/api/events");
+        const { data: projectsData } = await fetchJSON<{ projects: ProjectItem[] }>("/api/projects");
         setEvents(eventsData.events);
         setProjects(projectsData.projects);
-      } catch (err) {
-        setError("No se pudieron cargar los datos");
+      } catch (err: any) {
+        if (err.status === 401) {
+          router.push("/login?redirect=/admin");
+          return;
+        }
+        setError("No se pudieron cargar los datos (verifica que iniciaste sesión)");
       }
     })();
   }, []);
@@ -119,7 +130,18 @@ export default function AdminPage() {
       <div className="max-w-6xl mx-auto space-y-10">
         <header className="flex flex-col gap-2 border-b-4 border-coslat-yellow pb-4">
           <p className="font-mono uppercase text-xs tracking-[0.18em] text-coslat-dark">Panel</p>
-          <h1 className="font-title text-4xl md:text-5xl">Admin / Contenidos</h1>
+          <div className="flex items-center justify-between gap-4">
+            <h1 className="font-title text-4xl md:text-5xl">Admin / Contenidos</h1>
+            <button
+              onClick={async () => {
+                await fetch("/api/auth/logout", { method: "POST" });
+                router.push("/login?redirect=/admin");
+              }}
+              className="font-mono text-xs uppercase border border-coslat-blue px-3 py-2 hover:bg-coslat-blue hover:text-white transition-colors"
+            >
+              Cerrar sesión
+            </button>
+          </div>
           {error && <p className="text-red-600 font-mono text-sm">{error}</p>}
         </header>
 
