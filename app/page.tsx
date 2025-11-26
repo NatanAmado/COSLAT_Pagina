@@ -92,7 +92,7 @@ export default function Home() {
             {events.slice(0, 3).map((event) => (
               <div
                 key={event.title}
-                className="bg-coslat-light text-white p-5 border-4 border-coslat-accent shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] flex flex-col gap-2"
+                className="bg-coslat-light text-white p-5 border-4 border-coslat-yellow shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] flex flex-col gap-2"
               >
                 <p className="font-mono text-xs uppercase tracking-[0.18em] text-white/80">{event.tag}</p>
                 <h4 className="font-pixel text-2xl">{event.title}</h4>
@@ -128,8 +128,8 @@ export default function Home() {
         ::'         '::
        ::            ::
        ::            ::   LATAM
-       ::           .::   NODES
-       ::.        .::'    LOADING...
+       ::           .::   
+       ::.        .::'    CARGANDO...
         '::.    .::'
           '::::::'
               ::
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- BASES & PRINCIPLES (Based on Image 3) --- */}
+      {/* --- BASES & PRINCIPLES --- */}
       <section id="principios" className="py-24 bg-coslat-light text-white relative">
         <div className="container mx-auto px-6">
           <div className="flex items-end gap-4 mb-16 border-b border-gray-700 pb-4">
@@ -233,6 +233,17 @@ export default function Home() {
             Colectivo por la Soberanía Latinoamericana del Futuro.
             <br/>Copyleft 2024.
           </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 font-mono text-sm">
+            <a href="https://www.instagram.com/cos.lat/" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61583295762837" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              Facebook
+            </a>
+            <a href="https://github.com/NatanAmado/COSLAT_Pagina" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
         </div>
       </footer>
     </div>
