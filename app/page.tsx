@@ -56,14 +56,7 @@ export default function Home() {
               <button className="border-2 border-white text-white font-mono px-8 py-4 hover:bg-white hover:text-coslat-blue transition-colors uppercase flex items-center gap-2">
                 Leer Manifiesto <ArrowRight size={18} />
               </button>
-              <a
-                href="https://discord.gg/"
-                target="_blank"
-                rel="noreferrer"
-                className="bg-coslat-accent text-white font-mono px-8 py-4 uppercase flex items-center gap-2 border-2 border-coslat-accent hover:bg-white hover:text-coslat-accent transition-colors"
-              >
-                Únete al Discord <MessageCircle size={18} />
-              </a>
+
             </div>
           </div>
         </div>
@@ -149,7 +142,7 @@ export default function Home() {
       <section id="principios" className="py-24 bg-coslat-light text-white relative">
         <div className="container mx-auto px-6">
           <div className="flex items-end gap-4 mb-16 border-b border-gray-700 pb-4">
-             <h2 className="text-6xl font-title text-coslat-yellow">BASES</h2>
+             <h2 className="text-6xl font-title text-white">BASES</h2>
              <span className="font-mono text-black-400 mb-2">/ Estructura Organizativa v1.0</span>
           </div>
 
@@ -223,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* --- FOOTER --- */}
-      <footer className="bg-coslat-blue text-white py-12 border-t-8 border-coslat-yellow">
+      <footer className="bg-coslat-dark text-white py-12 border-t-8 border-coslat-yellow">
         <div className="container mx-auto px-6 text-center">
           <h4 className="font-pixel text-4xl mb-4">COSLAT</h4>
           <p className="font-mono text-sm opacity-70">
