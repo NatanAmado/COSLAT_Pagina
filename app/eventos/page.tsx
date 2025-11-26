@@ -1,10 +1,6 @@
-export default function EventosPage() {
-  const events = [
-    { title: "Conversatorio de Autonomía Digital", date: "15 JUN 2024", location: "Online", tag: "charla" },
-    { title: "Taller de Hardware Libre", date: "22 JUN 2024", location: "Buenos Aires", tag: "taller" },
-    { title: "Mesa Abierta de Gobernanza", date: "29 JUN 2024", location: "Online", tag: "debate" },
-  ];
+import { events } from "@/lib/events";
 
+export default function EventosPage() {
   return (
     <main className="min-h-screen bg-coslat-blue text-white p-8 md:p-12">
       <div className="max-w-4xl mx-auto space-y-8">
