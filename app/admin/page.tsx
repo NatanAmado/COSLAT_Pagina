@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { EventItem } from "@/lib/events";
 import type { ProjectItem } from "@/lib/projects";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from "@/components/icons";
 
 type FormEvent = {
   title: string;
