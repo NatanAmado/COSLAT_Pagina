@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Cpu, Globe, Users, Target, Menu, CalendarRange, FolderGit2, X } from "lucide-react";
+import { Cpu, Globe, Users, Target, Menu, CalendarRange, FolderGit2, X } from "@/components/icons";
 import type { Route } from "next";
 
 export default function Sidebar() {

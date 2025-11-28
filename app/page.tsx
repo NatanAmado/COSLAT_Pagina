@@ -1,6 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ArrowRight, Lock, Users, Share2, Code, ShieldCheck, Globe, MessageCircle, ExternalLink } from "lucide-react";
+import {
+  ArrowRight,
+  Lock,
+  Users,
+  Share2,
+  Code,
+  ShieldCheck,
+  Globe,
+  MessageCircle,
+  ExternalLink
+} from "@/components/icons";
 import { events } from "@/lib/events";
 
 const INCA_PATTERN =
