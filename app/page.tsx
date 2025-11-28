@@ -147,11 +147,11 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="relative w-full min-h-[18rem] md:min-h-[30rem]">
-            <img 
-              src="/Antorcha.png" 
-              alt="Antorcha COSLAT" 
-              className="absolute bottom-0 right-0 md:right-6 w-auto max-h-[26rem] md:max-h-[38rem] object-contain"
+          <div className="relative w-full min-h-[18rem] md:min-h-[30rem] flex items-end justify-center md:justify-end">
+            <img
+              src="/Antorcha.png"
+              alt="Antorcha COSLAT"
+              className="w-full max-w-[18rem] sm:max-w-[22rem] md:max-w-[26rem] lg:max-w-[32rem] h-auto object-contain drop-shadow-[0_12px_20px_rgba(0,0,0,0.25)]"
             />
           </div>
         </div>

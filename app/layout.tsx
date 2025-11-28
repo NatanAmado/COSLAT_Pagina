@@ -1,28 +1,6 @@
 import type { Metadata } from "next";
-import { VT323, Space_Mono, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
-
-const vt323 = VT323({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-vt323",
-  display: "swap",
-});
-
-const spaceMono = Space_Mono({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-space-mono",
-  display: "swap",
-});
-
-const libre = Libre_Baskerville({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-libre",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "COSLAT | Soberanía Latinoamericana",
@@ -37,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${vt323.variable} ${spaceMono.variable} ${libre.variable} font-mono bg-white text-coslat-blue antialiased flex flex-col md:flex-row min-h-screen`}
+        className="font-mono bg-white text-coslat-blue antialiased flex flex-col md:flex-row min-h-screen"
       >
         {/* Left Navigation */}
         <Sidebar />

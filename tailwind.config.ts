@@ -19,10 +19,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        title: ['Dahlia', 'var(--font-libre)', 'serif'],
-        pixel: ['var(--font-vt323)', 'monospace'],
-        mono: ['var(--font-space-mono)', 'monospace'],
-        serif: ['var(--font-libre)', 'serif'],
+        title: ["Dahlia", "Georgia", "serif"],
+        pixel: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        serif: ["Georgia", "serif"],
       },
       backgroundImage: {
         'pixel-pattern': "url(\"data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300158F' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1v1H5zM0 5h1v1H0z'/%3E%3C/g%3E%3C/svg%3E\")",
