@@ -20,7 +20,7 @@ const config: Config = {
       },
       fontFamily: {
         title: ["Dahlia", "Georgia", "serif"],
-        pixel: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        pixel: ["VT323", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
         mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
         serif: ["Georgia", "serif"],
       },
