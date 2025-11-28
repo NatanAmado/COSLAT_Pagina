@@ -1,218 +1,299 @@
-'use client';
+"use client";
+import { useEffect, useState } from "react";
+import {
+  ArrowRight,
+  Lock,
+  Users,
+  Share2,
+  Code,
+  ShieldCheck,
+  Globe,
+  MessageCircle,
+  ExternalLink
+} from "@/components/icons";
+import { events } from "@/lib/events";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import Image from 'next/image';
-import { GlitchText } from '../components/GlitchText';
-import { Modal } from '../components/Modal';
-import { PixelBrand } from '../components/PixelBrand';
-import { Scramble } from '../components/Scramble';
-import { daysUntilTarget } from '../lib/countdown';
-import { ensureAnalytics } from '../lib/firebaseClient';
+const INCA_PATTERN =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M5 0h6v5h5v6h-5v5H5v-5H0V5h5z' fill='%23FECF01'/%3E%3C/svg%3E";
 
-const telegramInvite = process.env.NEXT_PUBLIC_TELEGRAM_INVITE ?? 'https://t.me/+OLmS8nfAo34zMTE0';
-
-export default function HomePage() {
-  const [brandLoud, setBrandLoud] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [ctaEngaged, setCtaEngaged] = useState(false);
-  const [toast, setToast] = useState<string | null>(null);
-  const toastTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [days, setDays] = useState<number | null>(() => daysUntilTarget());
-
-  useEffect(() => {
-    const tick = () => setDays(daysUntilTarget());
-    const interval = setInterval(tick, 1000 * 60 * 60);
-    tick();
-    return () => clearInterval(interval);
-  }, []);
+export default function Home() {
+  const [asciiIndio, setAsciiIndio] = useState("");
 
   useEffect(() => {
-    ensureAnalytics();
+    fetch("/ascii_indio.txt")
+      .then((res) => res.text())
+      .then((text) => setAsciiIndio(text))
+      .catch(() => setAsciiIndio(""));
   }, []);
-
-  useEffect(() => {
-    return () => {
-      if (toastTimeout.current) {
-        clearTimeout(toastTimeout.current);
-      }
-    };
-  }, []);
-
-  const countdownText = useMemo(() => {
-    if (days === null) return 'Disponible en Telegram';
-    return ``;
-  }, [days]);
-
-  const handleCopy = useCallback(async () => {
-    if (toastTimeout.current) {
-      clearTimeout(toastTimeout.current);
-    }
-    try {
-      await navigator.clipboard.writeText(telegramInvite);
-      setToast('Invitación copiada');
-    } catch (error) {
-      setToast('No se pudo copiar');
-    }
-    toastTimeout.current = setTimeout(() => setToast(null), 2600);
-  }, []);
-
-  const openModal = () => {
-    setModalOpen(true);
-    setCtaEngaged(true);
-  };
-
-  const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-white text-black">
-      <PixelBrand intense={brandLoud} />
-      <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col items-center justify-center gap-24 px-6 py-24 lg:px-10">
-        <header
-          className="group flex w-full max-w-4xl flex-col gap-8 text-left"
-          onMouseEnter={() => setBrandLoud(true)}
-          onMouseLeave={() => setBrandLoud(false)}
-          onFocusCapture={() => setBrandLoud(true)}
-          onBlurCapture={() => setBrandLoud(false)}
-        >
-          <p className="text-sm uppercase tracking-[0.3em] text-black/60">Conversatorio 11/2025</p>
-          <h1 className="text-4xl font-bold leading-tight text-black md:text-6xl">
-            <span className="flex items-start gap-5">
-              <Image
-                src="/Isotype_Black.svg"
-                alt="Isotipo Autonomía Digital del Sur"
-                width={160}
-                height={160}
-                className="h-[2.3em] w-auto flex-shrink-0 md:h-[2.8em]"
-                priority
-              />
-              <GlitchText>Conversatorio: Autonomía Digital del Sur</GlitchText>
-            </span>
-          </h1>
-          <h2 className="text-xl text-black/70 md:text-2xl">IA, soberanía tecnológica y futuro del trabajo</h2>
-          <p className="text-sm text-black/70">
-            Encuentro abierto y colaborativo. Fin de noviembre 2025. Para acceder a fecha y lugar, únete al Telegram del evento.
-          </p>
-        </header>
-
-        <section className="grid w-full max-w-4xl gap-10 rounded-none border border-black/30 bg-black/5 p-8 text-sm md:grid-cols-2">
-          <div className="flex flex-col gap-2">
-            <span className="text-xs uppercase tracking-[0.3em] text-black/60">Fecha</span>
-            <Scramble placeholder="████ — disponible en Telegram" unlocked={ctaEngaged} />
+    <div className="bg-white selection:bg-coslat-yellow selection:text-coslat-blue">
+      
+      {/* --- HERO SECTION (Based on Image 1 & 2) --- */}
+      <section id="hero" className="min-h-screen flex flex-col relative bg-coslat-blue text-white overflow-hidden">
+        {/* Background Decorative Elements */}
+        <div className="absolute inset-0 bg-dither opacity-20 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-coslat-yellow opacity-10 hidden lg:block skew-x-12 transform translate-x-20"></div>
+        {asciiIndio && (
+          <div className="pointer-events-none absolute inset-0 flex items-end justify-end pr-4 md:pr-10 pb-4">
+            <pre className="mr-[-96px] md:mr-[-140px] lg:mr-[-180px] text-coslat-yellow/50 font-mono text-[6px] sm:text-[7px] md:text-[8px] lg:text-[9px] xl:text-[10px] leading-[6px] sm:leading-[7px] md:leading-[8px] lg:leading-[9px] whitespace-pre text-right mix-blend-screen drop-shadow-[0_0_10px_rgba(0,0,0,0.4)] opacity-85 max-h-full overflow-hidden">
+              {asciiIndio}
+            </pre>
           </div>
-          <div className="flex flex-col gap-2">
-            <span className="text-xs uppercase tracking-[0.3em] text-black/60">Lugar</span>
-            <Scramble placeholder="████ — disponible en Telegram" unlocked={ctaEngaged} />
-          </div>
+        )}
 
-        </section>
+        <div className="container mx-auto px-6 py-20 flex flex-col items-start justify-center gap-12 flex-1 relative z-10">
+          <div className="flex-1 w-full">
 
-        <section className="flex w-full max-w-4xl flex-col gap-6">
-          <div className="flex flex-wrap gap-5">
-            <button
-              type="button"
-              className="border border-black bg-black px-8 py-4 text-sm uppercase tracking-[0.35em] text-white transition hover:bg-white hover:text-black"
-              onClick={openModal}
+            
+            <h1 
+              className="text-6xl md:text-8xl lg:text-9xl font-title leading-none mb-3 glitch-text" 
+              data-text="Soberanía"
             >
-              Unirme al Telegram
-            </button>
-            <button
-              type="button"
-              className="text-sm uppercase tracking-[0.3em] text-black/70 underline-offset-4 hover:text-black hover:underline"
-              onClick={handleCopy}
-            >
-              Copiar invitación
-            </button>
-          </div>
-          <p className="text-xs text-black/60">
-            La fecha y el lugar se liberan dentro del servidor. Respeto absoluto por la privacidad y la autonomía colectiva.
-          </p>
-        </section>
+              Soberanía
+            </h1>
+            <h2 className="text-4xl md:text-6xl font-title italic mb-8 max-w-4xl leading-tight">
+              Latinoamericana del Futuro
+            </h2>
 
-        <footer className="w-full max-w-4xl text-xs text-black/60">
-          <p>Evento sin fines de lucro. Código y materiales bajo licencias abiertas.</p>
-          <details className="mt-6 border border-black/30 p-6">
-            <summary className="cursor-pointer text-sm uppercase tracking-[0.3em]">Ver código</summary>
-            <div className="mt-4 space-y-3 text-sm leading-relaxed">
-              <p>
-                Bienvenidos, ciudadanos y ciudadanas del futuro. Si están leyendo esto, es por que seguramente nos une una misma inquietud: Latinoamérica no puede seguir siendo espectadora del porvenir.
-              </p>
-              <p>
-                Estamos en un momento decisivo. La cuarta revolución industrial y la Web3 redefinen poder, conocimiento y libertad. Nuestro propósito es participar activamente en la creación de ese futuro desde nuestra identidad, creatividad y soberanía.
-              </p> 
-              <p>
-                Durante siglos, el continente fue tratado como proveedor de materias primas y mano de obra barata. Hoy la lógica se repite en lo digital: exportamos datos crudos y minerales para chips, importamos tecnología terminada y las grandes plataformas concentran el poder.
-              </p>
-              <p>
-                Pero esta vez contamos con herramientas, conciencia y redes para cambiar la historia. Creemos en una Latinoamérica soberana, interconectada y capaz de producir su propio conocimiento tecnológico.
-              </p>
-              <div>
-                <p className="font-semibold">Defendemos:</p>
-                <ul className="mt-2 list-disc space-y-1 pl-6">
-                  <li>La autonomía tecnológica como derecho colectivo.</li>
-                  <li>La colaboración entre comunidades, artistas, desarrolladores y diseñadores como fuerza transformadora.</li>
-                  <li>La innovación abierta, descentralizada y ética al servicio del bien común.</li>
-                  <li>La identidad cultural latinoamericana como motor creativo y de resistencia.</li>
-                </ul>
-              </div>
-              <p>
-                Imaginamos un continente que no solo consuma el futuro, sino que lo diseñe, programe y gobierne. Queremos construir herramientas, redes y espacios que empoderen a las comunidades locales y fortalezcan la soberanía de nuestros datos.
-              </p>
-              <p>
-                Convocamos a programadores, diseñadores, artistas, investigadores y soñadores a sumarse al colectivo. Escuchemos, pensemos y construyamos una agenda común.
-              </p>
-              <p>
-                Mientras tanto, difundamos esta iniciativa y llevémosla a cada espacio: TecWeek, SAIAconf, DevConnect y cualquier lugar donde la tecnología defina el mañana. Si querés sumar o colaborar, escribinos. Esto recién comienza.
-              </p>
-              <p className="font-semibold">
-                La soberanía no se hereda, se construye. Latinoamérica tiene todo para ser protagonista del futuro digital: hagámoslo posible, juntas y juntos.
-              </p>
-              <p>
-                Por:
-                <ul className="mt-2 list-disc space-y-1 pl-6">
-                  <li>Colectivo por la Soberanía Latinoamericana del Futuro (COSLAT)</li>
-                </ul>
-              </p>
-
-            </div>
-          </details>
-        </footer>
-      </main>
-
-      {toast && (
-        <div className="fixed bottom-6 right-6 z-50 border border-black bg-black px-4 py-2 text-sm text-white">
-          {toast}
-        </div>
-      )}
-
-      <Modal isOpen={modalOpen} onClose={closeModal} titleId="modal-title" descriptionId="modal-desc">
-        <div className="flex flex-col gap-4 text-black">
-          <div>
-            <h3 id="modal-title" className="text-lg font-semibold">
-              Acceso a fecha y lugar
-            </h3>
-            <p id="modal-desc" className="mt-2 text-sm text-black/70">
-              La información completa se libera en el Telegram del evento. Únete y participa.
+            <p className="font-mono text-lg md:text-xl max-w-2xl mb-12 border-l-4 border-coslat-yellow pl-6 py-2">
+              "Somos un colectivo de desarrolladores, artistas y revolucionarios dispuestos
+              a reinventar un futuro para Latinoamérica que no venga de afuera. Creemos en
+              volvernos actores y no testigos de las nuevas revoluciones tecnológicas."
             </p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <a
-              href={telegramInvite}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-black bg-black px-4 py-3 text-center text-sm uppercase tracking-[0.3em] text-white transition hover:bg-white hover:text-black"
-            >
-              Unirme al Telegram
-            </a>
-            <button
-              type="button"
-              className="text-xs uppercase tracking-[0.3em] text-black/70 underline-offset-4 hover:text-black hover:underline"
-              onClick={handleCopy}
-            >
-              Copiar invitación
-            </button>
+
+            <div className="flex flex-col md:flex-row gap-4 flex-wrap z-10">
+              <a
+                href="https://discord.gg/hsNkj4aWh8"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-coslat-yellow text-coslat-blue font-pixel text-xl px-8 py-4 hover:bg-white transition-colors uppercase border-b-4 border-black active:border-b-0 active:translate-y-1 inline-flex items-center justify-center"
+              >
+                Reimaginar el Futuro
+              </a>
+              <a
+                href="/manifiesto"
+                className="border-2 border-white text-white font-mono px-8 py-4 hover:bg-white hover:text-coslat-blue transition-colors uppercase flex items-center gap-2"
+              >
+                Leer Manifiesto <ArrowRight size={18} />
+              </a>
+            </div>
           </div>
         </div>
-      </Modal>
+        
+        {/* Running Banner at bottom */}
+        <div className="bg-coslat-yellow text-coslat-blue py-2  overflow-hidden whitespace-nowrap font-pixel text-2xl">
+          <div className="animate-marquee inline-block">
+            DESCENTRALIZADO +++ ABIERTO +++ SOBERANO +++ UNIDAD LATINA +++ OTRA TECNOLOGÍA ES POSIBLE +++ 
+            DESCENTRALIZADO +++ ABIERTO +++ SOBERANO +++ UNIDAD LATINA +++ OTRA TECNOLOGÍA ES POSIBLE +++
+          </div>
+        </div>
+      </section>
+
+      {/* --- UPCOMING EVENTS --- */}
+      <section className="bg-white text-coslat-blue py-16 border-b-8 border-coslat-yellow">
+        <div className="container mx-auto px-6 space-y-10">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <p className="font-mono uppercase text-xs tracking-[0.2em] text-coslat-dark">Calendario</p>
+              <h3 className="font-title text-4xl md:text-5xl">Próximos eventos</h3>
+              <p className="font-mono text-sm md:text-base text-coslat-dark/80 mt-2">
+                Sigue las acciones del colectivo y súmate a la próxima sesión.
+              </p>
+            </div>
+            <a
+              href="/eventos"
+              className="inline-flex items-center gap-2 font-mono uppercase border-2 border-coslat-blue px-4 py-2 hover:bg-coslat-blue hover:text-white transition-colors"
+            >
+              Ver todos <ArrowRight size={16} />
+            </a>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {events.slice(0, 3).map((event) => (
+              <div
+                key={event.title}
+                className="bg-coslat-light text-white p-5 border-4 border-coslat-yellow shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] flex flex-col gap-2"
+              >
+                <p className="font-mono text-xs uppercase tracking-[0.18em] text-white/80">{event.tag}</p>
+                <div className="flex items-center gap-2">
+                  <h4 className="font-pixel text-2xl">{event.title}</h4>
+                  {event.link && (
+                    <a href={event.link} target="_blank" rel="noreferrer" className="text-coslat-yellow hover:underline flex items-center gap-1">
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
+                </div>
+                <div className="font-mono text-sm flex flex-col gap-1">
+                  <span className="text-coslat-yellow">{event.date}</span>
+                  <span className="text-white/80">{event.location}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- CALL TO ACTION (Based on Image 2) --- */}
+      <section id="estructura" className="relative bg-white text-coslat-blue py-20 overflow-hidden">
+        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h3 className="font-title text-4xl md:text-5xl mb-6">Llamamos a artistas,<br/>desarrolladores,<br/>revolucionarios.</h3>
+            <div className="bg-coslat-blue text-white p-6 inline-block transform -rotate-1 mb-8">
+              <span className="font-pixel text-2xl md:text-3xl">A reimaginar el futuro de América Latina.</span>
+            </div>
+            <p className="font-mono text-lg leading-relaxed mb-6">
+              Sé parte de nuestro Colectivo Autónomo Descentralizado.
+              Construyamos chips, infraestructura digital y sistemas económicos que nos pertenezcan.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:items-center z-10">
+              <a
+                href="https://discord.gg/hsNkj4aWh8"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full sm:w-auto text-center bg-coslat-accent text-white font-mono px-6 py-3 uppercase flex items-center justify-center gap-2 border-2 border-coslat-accent hover:bg-white hover:text-coslat-accent transition-colors"
+              >
+                Únete al Discord <MessageCircle size={18} />
+              </a>
+            </div>
+          </div>
+          <div className="relative w-full min-h-[18rem] md:min-h-[30rem] flex items-end justify-center md:justify-end">
+            <img
+              src="/Antorcha.png"
+              alt="Antorcha COSLAT"
+              className="w-full max-w-[18rem] sm:max-w-[22rem] md:max-w-[26rem] lg:max-w-[32rem] h-auto object-contain drop-shadow-[0_12px_20px_rgba(0,0,0,0.25)]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* --- BASES & PRINCIPLES --- */}
+      <section id="principios" className="py-24 bg-coslat-light text-white relative">
+        <div className="container mx-auto px-6">
+          <div className="flex items-end gap-4 mb-16 border-b border-gray-700 pb-4">
+             <h2 className="text-6xl font-title text-white">BASES</h2>
+             <span className="font-mono text-black-400 mb-2">/ Estructura Organizativa v1.0</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Principle 1 */}
+            <PrincipleCard 
+              title="Colectivismo" 
+              icon={<Users />}
+              desc="Propiedad comunal de la infraestructura digital." 
+            />
+             {/* Principle 2 */}
+            <PrincipleCard 
+              title="Código Abierto" 
+              icon={<Code />}
+              desc="Transparencia total. El conocimiento es libre." 
+            />
+             {/* Principle 3 */}
+            <PrincipleCard 
+              title="Soberanía" 
+              icon={<ShieldCheck />}
+              desc="Independencia tecnológica de potencias extranjeras." 
+            />
+             {/* Principle 4 */}
+            <PrincipleCard 
+              title="Privacidad" 
+              icon={<Lock />}
+              desc="Protección de datos como derecho humano fundamental." 
+            />
+             {/* Principle 5 */}
+            <PrincipleCard 
+              title="Descentralización" 
+              icon={<Share2 />}
+              desc="Redes distribuidas. Sin puntos únicos de fallo." 
+            />
+             {/* Principle 6 */}
+            <PrincipleCard 
+              title="Unidad Latina" 
+              icon={<Globe />}
+              desc="Integración regional para la fortaleza geopolítica." 
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* --- FINES (Based on the flow chart ends) --- */}
+      <section id="fines" className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-5xl font-title text-coslat-blue mb-12 text-center">Nuestros Fines</h2>
+          
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8 relative">
+            {/* Connector Line */}
+            <div className="hidden md:block absolute top-12 left-0 w-full h-1 bg-coslat-blue z-0"></div>
+
+            <GoalStep 
+              number="I" 
+              title="Independencia Tecnológica"
+              desc="Acabar con la dependencia tecnológica de Latinoamérica."
+            />
+            <GoalStep 
+              number="II" 
+              title="Economía Post-Laboral"
+              desc="Crear las bases para un sistema económico justo tras la automatización."
+            />
+            <GoalStep 
+              number="III" 
+              title="Política Regional"
+              desc="Crear las bases para un sistema político regional descentralizado."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* --- FOOTER --- */}
+      <footer className="relative bg-coslat-dark text-white pt-16 pb-12 overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-full h-16"
+          style={{ backgroundImage: `url("${INCA_PATTERN}")`, backgroundRepeat: "repeat-x", backgroundSize: "16px 16px" }}
+        ></div>
+        <div className="container mx-auto px-6 text-center">
+          <h4 className="font-pixel text-4xl mb-4">COSLAT</h4>
+          <p className="font-mono text-sm opacity-70">
+            Colectivo por la Soberanía Latinoamericana del Futuro.
+            <br/>Copyleft 2025.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 font-mono text-sm">
+            <a href="https://www.instagram.com/cos.lat/" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61583295762837" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              Facebook
+            </a>
+            <a href="https://github.com/NatanAmado/COSLAT_Pagina" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
+}
+
+// Sub-components for cleanliness
+function PrincipleCard({ title, icon, desc }: { title: string, icon: any, desc: string }) {
+  return (
+    <div className="border border-gray-700 hover:border-coslat-yellow p-6 transition-all hover:-translate-y-1 group bg-black/50">
+      <div className="text-coslat-yellow mb-4 group-hover:scale-110 transition-transform origin-left">
+        {icon}
+      </div>
+      <h3 className="font-pixel text-2xl mb-2">{title}</h3>
+      <p className="font-mono text-sm text-gray-400">{desc}</p>
+    </div>
+  )
+}
+
+function GoalStep({ number, title, desc }: { number: string, title: string, desc: string }) {
+  return (
+        <div className="relative z-10 bg-white p-6 border-2 border-coslat-blue w-full md:w-1/3 shadow-[8px_8px_0px_0px_#FECF01]">
+      <div className="w-12 h-12 bg-coslat-blue text-white font-pixel text-xl flex items-center justify-center mb-4">
+        {number}
+      </div>
+      <h3 className="font-serif font-bold text-xl mb-3">{title}</h3>
+      <p className="font-mono text-sm text-gray-600 leading-relaxed">{desc}</p>
+    </div>
+  )
 }

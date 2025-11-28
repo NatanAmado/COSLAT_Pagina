@@ -1,40 +1,34 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
-        bg: '#ffffff',
-        fg: '#000000'
+        coslat: {
+          blue: "#06B9CE",
+          yellow: "#FECF01",
+          dark: "#471D20",
+          light: "#57934E",
+          accent: "#E16482",
+        },
       },
       fontFamily: {
-        mono: [
-          'ui-monospace',
-          'SFMono-Regular',
-          'Menlo',
-          'Monaco',
-          'Consolas',
-          'Liberation Mono',
-          'monospace'
-        ]
+        title: ["Dahlia", "Georgia", "serif"],
+        pixel: ["VT323", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        serif: ["Georgia", "serif"],
       },
-      keyframes: {
-        glitch: {
-          '0%': { transform: 'translate(0)', textShadow: '0 0 #fff, 0 0 #000' },
-          '20%': { transform: 'translate(-1px, 0.5px)', textShadow: '1px 0 #fff, -1px 0 #000' },
-          '40%': { transform: 'translate(1px, -0.5px)', textShadow: '-1px 0 #fff, 1px 0 #000' },
-          '60%': { transform: 'translate(-0.5px, -1px)', textShadow: '1px 0 #fff, -1px 0 #000' },
-          '80%': { transform: 'translate(0.5px, 1px)', textShadow: '-1px 0 #fff, 1px 0 #000' },
-          '100%': { transform: 'translate(0)', textShadow: '0 0 #fff, 0 0 #000' }
-        }
-      },
-      animation: {
-        glitch: 'glitch 1s steps(2, end) infinite'
+      backgroundImage: {
+        'pixel-pattern': "url(\"data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300158F' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1v1H5zM0 5h1v1H0z'/%3E%3C/g%3E%3C/svg%3E\")",
       }
-    }
+    },
   },
-  plugins: []
+  plugins: [],
 };
-
 export default config;

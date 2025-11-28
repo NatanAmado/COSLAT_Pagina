@@ -3,50 +3,90 @@
 @tailwind utilities;
 
 :root {
-  --bg: #ffffff;
-  --fg: #000000;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 245, 245, 245;
+  --background-end-rgb: 255, 255, 255;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Dahlia';
+  src: url('/fonts/dahlia-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dahlia';
+  src: url('/fonts/dahlia-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dahlia';
+  src: url('/fonts/dahlia-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: var(--bg);
-  color: var(--fg);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
+  color: rgb(var(--foreground-rgb));
+  background: #F5F5F5;
 }
 
-a {
-  color: inherit;
+/* Custom Glitch Text Effect */
+.glitch-text {
+  position: relative;
 }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-  background: transparent;
-  border: none;
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-:focus-visible {
-  outline: 2px solid var(--fg);
-  outline-offset: 4px;
+.glitch-text::before {
+  left: 2px;
+  text-shadow: -1px 0 #FECF01;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
-  }
+.glitch-text::after {
+  left: -2px;
+  text-shadow: -1px 0 #06B9CE;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim2 5s infinite linear alternate-reverse;
 }
+
+@keyframes glitch-anim {
+  0% { clip: rect(38px, 9999px, 47px, 0); }
+  20% { clip: rect(6px, 9999px, 78px, 0); }
+  40% { clip: rect(72px, 9999px, 23px, 0); }
+  60% { clip: rect(13px, 9999px, 91px, 0); }
+  80% { clip: rect(59px, 9999px, 3px, 0); }
+  100% { clip: rect(98px, 9999px, 43px, 0); }
+}
+
+@keyframes glitch-anim2 {
+  0% { clip: rect(12px, 9999px, 56px, 0); }
+  20% { clip: rect(89px, 9999px, 12px, 0); }
+  40% { clip: rect(23px, 9999px, 76px, 0); }
+  60% { clip: rect(67px, 9999px, 34px, 0); }
+  80% { clip: rect(34px, 9999px, 89px, 0); }
+  100% { clip: rect(2px, 9999px, 23px, 0); }
+}
+
+.bg-dither {
+  background-image: radial-gradient(#06B9CE 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* Static ASCII overlay (no animation to keep it light) */
