@@ -70,7 +70,9 @@ const actions = [
   "Organizar laboratorios abiertos para prototipar chips, redes y sistemas económicos cooperativos.",
   "Impulsar campañas de alfabetización digital y criptográfica en comunidades locales.",
   "Financiar proyectos mediante modelos solidarios: donaciones transparentes, fondos comunes y alianzas con cooperativas.",
-  "Publicar guías prácticas para replicar infraestructuras soberanas en escuelas, barrios y centros culturales."
+  "Publicar guías prácticas para replicar infraestructuras soberanas en escuelas, barrios y centros culturales.",
+  "Apoyar producciones artísticas que propongan una nueva visión del futuro de latinoamérica."
+
 ];
 
 export default function ManifiestoPage() {
@@ -80,10 +82,6 @@ export default function ManifiestoPage() {
         <div className="absolute inset-0 opacity-15 bg-[radial-gradient(circle_at_top_left,#FECF01_0,transparent_30%)]" aria-hidden></div>
         <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-coslat-yellow/40 to-transparent" aria-hidden></div>
         <div className="relative max-w-5xl mx-auto space-y-8">
-          <div className="inline-flex items-center gap-3 bg-white text-coslat-blue font-mono uppercase tracking-[0.2em] px-4 py-2 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.25)]">
-            <span className="h-3 w-3 bg-coslat-accent rounded-full"></span>
-            Manifiesto COSLAT
-          </div>
           <h1 className="font-title text-4xl md:text-6xl leading-tight">Soberanía tecnológica latinoamericana, comunal y abierta.</h1>
           <p className="font-mono text-lg md:text-xl max-w-3xl text-white/90">
             Declaramos un rumbo compartido: crear infraestructura digital, económica y cultural que responda a nuestros pueblos
@@ -94,26 +92,10 @@ export default function ManifiestoPage() {
               href="https://discord.gg/hsNkj4aWh8"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-coslat-yellow text-coslat-blue font-pixel text-lg px-6 py-3 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-transform"
+              className="inline-flex items-center justify-center gap-2 bg-coslat-yellow text-black font-pixel text-lg px-6 py-3 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-transform"
             >
               Únete al colectivo
             </a>
-            <a
-              href="#principios"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-mono uppercase px-6 py-3 hover:bg-white hover:text-coslat-blue transition-colors"
-            >
-              Explorar principios
-            </a>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
-            {["6 principios irrenunciables", "100% código abierto", "Comunidad en expansión"].map((stat) => (
-              <div
-                key={stat}
-                className="bg-white/10 border border-white/30 px-4 py-3 font-mono uppercase tracking-[0.08em] backdrop-blur"
-              >
-                {stat}
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -121,7 +103,6 @@ export default function ManifiestoPage() {
       <section id="principios" className="px-6 py-16 md:py-20">
         <div className="max-w-6xl mx-auto space-y-10">
           <div className="space-y-3">
-            <p className="font-mono uppercase text-xs tracking-[0.25em] text-coslat-dark">Fundamentos</p>
             <h2 className="font-title text-4xl md:text-5xl">Principios que nos sostienen</h2>
             <p className="font-mono text-base text-coslat-dark/80 max-w-3xl">
               Cada iniciativa del colectivo se evalúa contra estas bases. No negociamos transparencia, autonomía ni justicia
@@ -155,9 +136,6 @@ export default function ManifiestoPage() {
               <p className="font-mono uppercase text-xs tracking-[0.25em] text-white/80">Lineamientos prácticos</p>
               <h2 className="font-title text-4xl md:text-5xl">Cómo aterrizamos el manifiesto</h2>
             </div>
-            <div className="bg-coslat-yellow text-coslat-blue font-pixel px-4 py-2 inline-flex items-center gap-2 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.2)]">
-              <span className="h-3 w-3 bg-coslat-blue"></span> Version 1.0
-            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -178,7 +156,6 @@ export default function ManifiestoPage() {
       <section className="px-6 py-16 md:py-20">
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="space-y-3">
-            <p className="font-mono uppercase text-xs tracking-[0.25em] text-coslat-dark">Acción inmediata</p>
             <h2 className="font-title text-4xl md:text-5xl">Lo que estamos haciendo ahora</h2>
             <p className="font-mono text-base text-coslat-dark/80 max-w-3xl">
               El manifiesto es operativo: se convierte en proyectos, campañas y documentación replicable. Súmate en el frente que más te inspire.
@@ -199,7 +176,6 @@ export default function ManifiestoPage() {
       <section className="bg-coslat-blue text-white px-6 py-16 md:py-20">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 md:items-center md:justify-between">
           <div className="space-y-3">
-            <p className="font-mono uppercase text-xs tracking-[0.25em] text-white/80">Convocatoria</p>
             <h3 className="font-title text-3xl md:text-4xl">Si compartes estos principios, construyamos juntos.</h3>
             <p className="font-mono text-base text-white/85 max-w-2xl">
               Trae tu experiencia técnica, artística o política. Necesitamos más mentes para diseñar infraestructura soberana, segura y alegre desde Latinoamérica.
@@ -210,15 +186,9 @@ export default function ManifiestoPage() {
               href="https://discord.gg/hsNkj4aWh8"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-coslat-yellow text-coslat-blue font-pixel text-lg px-6 py-3 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-transform"
+              className="inline-flex items-center justify-center gap-2 bg-coslat-yellow text-black font-pixel text-xl px-6 py-3 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-transform"
             >
-              Únete al Discord
-            </a>
-            <a
-              href="mailto:hola@coslat.org"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-mono uppercase px-6 py-3 hover:bg-white hover:text-coslat-blue transition-colors"
-            >
-              Escribir al equipo
+              Únete a COSLAT
             </a>
           </div>
         </div>

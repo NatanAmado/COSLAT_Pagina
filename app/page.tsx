@@ -161,7 +161,7 @@ export default function Home() {
             <img
               src="/Antorcha.png"
               alt="Antorcha COSLAT"
-              className="w-full max-w-[18rem] sm:max-w-[22rem] md:max-w-[26rem] lg:max-w-[32rem] h-auto object-contain drop-shadow-[0_12px_20px_rgba(0,0,0,0.25)]"
+              className="block m-0 w-full max-w-[14rem] sm:max-w-[18rem] md:max-w-[20rem] lg:max-w-[22rem] h-auto object-contain"
             />
           </div>
         </div>

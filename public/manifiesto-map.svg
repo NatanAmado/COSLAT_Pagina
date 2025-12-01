@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" fill="none">
+  <defs>
+    <style>
+      .node { font-family: "Menlo", "SFMono-Regular", monospace; font-size: 16px; fill: #0f172a; }
+      .small { font-size: 14px; }
+    </style>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M2 2L10 6L2 10Z" fill="#06B9CE"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M2 2L10 6L2 10Z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M2 2L10 6L2 10Z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <!-- COSLAT root -->
+  <rect x="80" y="470" width="120" height="48" rx="6" fill="#6b7280" stroke="#1f2937" stroke-width="2"/>
+  <text class="node" x="140" y="500" text-anchor="middle" fill="#fff">COSLAT</text>
+
+  <!-- Principios branch -->
+  <path d="M200 494H310" stroke="#06B9CE" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <rect x="320" y="466" width="120" height="56" rx="8" fill="#e0f7fb" stroke="#06B9CE" stroke-width="3"/>
+  <text class="node" x="380" y="500" text-anchor="middle">Principios</text>
+
+  <!-- Principios list -->
+  <path d="M440 494H510" stroke="#06B9CE" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <rect x="520" y="120" width="150" height="34" rx="6" fill="#e0f7fb" stroke="#06B9CE" stroke-width="2"/>
+  <text class="node small" x="595" y="142" text-anchor="middle">Abierto</text>
+
+  <path d="M440 494C520 494 520 154 520 154" stroke="#06B9CE" stroke-width="3" fill="none"/>
+  <path d="M595 154v12" stroke="#06B9CE" stroke-width="3"/>
+
+  <!-- stack of principle items -->
+  <g stroke="#06B9CE" stroke-width="2">
+    <rect x="520" y="162" width="180" height="34" rx="6" fill="#e0f7fb"/>
+    <rect x="520" y="204" width="180" height="34" rx="6" fill="#e0f7fb"/>
+    <rect x="520" y="246" width="180" height="34" rx="6" fill="#e0f7fb"/>
+    <rect x="520" y="288" width="180" height="34" rx="6" fill="#e0f7fb"/>
+    <rect x="520" y="330" width="180" height="34" rx="6" fill="#e0f7fb"/>
+    <rect x="520" y="372" width="180" height="34" rx="6" fill="#e0f7fb"/>
+    <rect x="520" y="414" width="180" height="34" rx="6" fill="#e0f7fb"/>
+  </g>
+  <g class="node small" text-anchor="middle">
+    <text x="610" y="184">Colectivismo</text>
+    <text x="610" y="226">Democracia directa</text>
+    <text x="610" y="268">Privacidad</text>
+    <text x="610" y="310">Soberanía</text>
+    <text x="610" y="352">Unidad latinoamericana</text>
+    <text x="610" y="394">Descentralización</text>
+    <text x="610" y="436">Desde las bases</text>
+  </g>
+
+  <!-- Medios branch -->
+  <path d="M200 494L310 494" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <rect x="320" y="560" width="120" height="48" rx="8" fill="#e4f5e9" stroke="#16a34a" stroke-width="3"/>
+  <text class="node" x="380" y="590" text-anchor="middle">Medios</text>
+
+  <!-- Financiamento dashed -->
+  <path d="M380 608v70" stroke="#16a34a" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-green)"/>
+  <rect x="320" y="690" width="140" height="44" rx="8" fill="#e4f5e9" stroke="#16a34a" stroke-width="2"/>
+  <text class="node small" x="390" y="716" text-anchor="middle">Financiamiento</text>
+
+  <!-- Financiamiento items -->
+  <path d="M460 712H520" stroke="#16a34a" stroke-width="3"/>
+  <g stroke="#16a34a" stroke-width="2">
+    <rect x="530" y="660" width="210" height="34" rx="6" fill="#e4f5e9"/>
+    <rect x="530" y="702" width="210" height="34" rx="6" fill="#e4f5e9"/>
+    <rect x="530" y="744" width="210" height="34" rx="6" fill="#e4f5e9"/>
+    <rect x="530" y="786" width="210" height="34" rx="6" fill="#e4f5e9"/>
+    <rect x="530" y="828" width="210" height="34" rx="6" fill="#e4f5e9"/>
+    <rect x="530" y="870" width="210" height="34" rx="6" fill="#e4f5e9"/>
+    <rect x="530" y="912" width="210" height="34" rx="6" fill="#e4f5e9"/>
+  </g>
+  <g class="node small" text-anchor="middle">
+    <text x="635" y="682">Fondos de DAOs de bienes públicos</text>
+    <text x="635" y="724">Donaciones privadas</text>
+    <text x="635" y="766">Retornos de proyectos</text>
+    <text x="635" y="808">Fondos públicos</text>
+    <text x="635" y="850">Venta de merch</text>
+    <text x="635" y="892">Subastas de NFTs</text>
+    <text x="635" y="934">¿Venta de token?</text>
+  </g>
+
+  <!-- Proyectos branch -->
+  <path d="M440 584H520" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="530" y="556" width="130" height="52" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="3"/>
+  <text class="node" x="595" y="588" text-anchor="middle">Proyectos</text>
+
+  <!-- Divulgación -->
+  <path d="M660 582H760" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="770" y="540" width="140" height="44" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="840" y="567" text-anchor="middle">Divulgación</text>
+
+  <!-- Divulgacion children -->
+  <path d="M840 584v30" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="790" y="624" width="120" height="34" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="850" y="646" text-anchor="middle">Alcance</text>
+  <path d="M850 658v20" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="710" y="690" width="130" height="34" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="870" y="690" width="150" height="34" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="775" y="712" text-anchor="middle">Redes sociales</text>
+  <text class="node small" x="945" y="712" text-anchor="middle">Posters físicos</text>
+
+  <!-- Educación -->
+  <path d="M840 584c80 0 80-80 80-80" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)" fill="none"/>
+  <rect x="900" y="452" width="140" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="970" y="476" text-anchor="middle">Educación</text>
+  <path d="M970 492v20" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="930" y="524" width="160" height="34" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="1010" y="546" text-anchor="middle">Charlas y eventos</text>
+  <path d="M1010 558v24" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="940" y="590" width="140" height="34" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="1010" y="612" text-anchor="middle">Videos</text>
+
+  <!-- Investigación académica -->
+  <path d="M660 582c60 0 60-140 60-140" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)" fill="none"/>
+  <rect x="720" y="410" width="200" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="820" y="436" text-anchor="middle">Investigación académica</text>
+
+  <!-- Hardware / Software / Arte -->
+  <path d="M660 582c40 0 40-40 40-40" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="700" y="320" width="120" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="760" y="346" text-anchor="middle">Hardware</text>
+  <path d="M820 340H900" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="910" y="318" width="190" height="44" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="1005" y="344" text-anchor="middle">Chips, Data Centers, HPC</text>
+
+  <rect x="700" y="260" width="120" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="760" y="286" text-anchor="middle">Software</text>
+  <path d="M820 280H900" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="910" y="238" width="120" height="44" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="970" y="264" text-anchor="middle">IA</text>
+  <path d="M820 280c80 0 80 40 80 40" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)" fill="none"/>
+  <rect x="910" y="300" width="140" height="44" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="980" y="326" text-anchor="middle">Blockchain</text>
+
+  <rect x="700" y="200" width="120" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="760" y="226" text-anchor="middle">Hackatones</text>
+  <path d="M820 220H900" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="910" y="190" width="140" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="980" y="216" text-anchor="middle">UI/UX</text>
+
+  <rect x="700" y="140" width="120" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="760" y="166" text-anchor="middle">Arte y diseño</text>
+  <path d="M820 160H900" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <rect x="910" y="120" width="140" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="980" y="146" text-anchor="middle">Divulgación</text>
+  <path d="M820 160c60 0 60-40 60-40" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)" fill="none"/>
+  <rect x="910" y="70" width="140" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="980" y="96" text-anchor="middle">Merch físico</text>
+  <path d="M820 160c80 0 80 80 80 80" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)" fill="none"/>
+  <rect x="910" y="160" width="160" height="40" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text class="node small" x="990" y="186" text-anchor="middle">NFTs (multimedia)</text>
+
+  <!-- Fines branch -->
+  <path d="M200 494c0 200 200 200 200 200" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)" fill="none"/>
+  <rect x="420" y="660" width="140" height="52" rx="8" fill="#e4f5e9" stroke="#16a34a" stroke-width="3"/>
+  <text class="node" x="490" y="692" text-anchor="middle">Fines</text>
+
+  <path d="M560 686H680" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <rect x="690" y="650" width="180" height="44" rx="8" fill="#e4f5e9" stroke="#16a34a" stroke-width="2"/>
+  <text class="node small" x="780" y="676" text-anchor="middle">I. Acabar con la dependencia</text>
+  <text class="node small" x="780" y="694" text-anchor="middle">latinoamericana</text>
+
+  <path d="M560 686c60 0 60 90 60 90" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)" fill="none"/>
+  <rect x="690" y="760" width="220" height="44" rx="8" fill="#e4f5e9" stroke="#16a34a" stroke-width="2"/>
+  <text class="node small" x="800" y="786" text-anchor="middle">II. Sentar las bases para un sistema justo</text>
+
+  <path d="M560 686c40 0 40 180 40 180" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)" fill="none"/>
+  <rect x="690" y="850" width="260" height="44" rx="8" fill="#e4f5e9" stroke="#16a34a" stroke-width="2"/>
+  <text class="node small" x="820" y="876" text-anchor="middle">III. Crear las bases para un sistema político regional descentralizado</text>
+</svg>

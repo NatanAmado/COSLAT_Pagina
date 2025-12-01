@@ -36,10 +36,13 @@ export const Lock = (props: IconProps) => (
 
 export const Users = (props: IconProps) => (
   <IconBase {...props}>
-    <circle cx="9" cy="8" r="3" />
-    <path d="M2 19a6 6 0 0 1 12 0" />
-    <circle cx="17" cy="9" r="2" />
-    <path d="M14.5 19a4.5 4.5 0 0 1 7.5 0" />
+    <circle cx="12" cy="7" r="3" />
+    <path d="M6.5 20a5.5 5.5 0 0 1 11 0" />
+    <circle cx="6" cy="11" r="2.5" />
+    <circle cx="18" cy="11" r="2.5" />
+    <path d="M6 14.5v.5a6 6 0 0 0 4 5.66" />
+    <path d="M18 14.5v.5a6 6 0 0 1-4 5.66" />
+    <path d="M8.5 10.5 12 12l3.5-1.5" />
   </IconBase>
 );
 
@@ -91,9 +94,11 @@ export const ExternalLink = (props: IconProps) => (
 
 export const Cpu = (props: IconProps) => (
   <IconBase {...props}>
-    <rect x="6" y="6" width="12" height="12" rx="2" />
+    <rect x="5" y="5" width="14" height="14" rx="3" />
     <rect x="9" y="9" width="6" height="6" rx="1" />
-    <path d="M12 2v2m0 16v2m8-10h-2M6 12H4m12-8v2M8 4v2m8 12v2m-8-2v2m12-8h2m-2 4h2M2 8h2M2 16h2" />
+    <path d="M12 1.5v3m0 15v3M1.5 12h3m15 0h3" />
+    <path d="M7 3v3m0 12v3M17 3v3m0 12v3" />
+    <circle cx="12" cy="12" r="1" />
   </IconBase>
 );
 
@@ -123,10 +128,13 @@ export const CalendarRange = (props: IconProps) => (
 
 export const FolderGit2 = (props: IconProps) => (
   <IconBase {...props}>
-    <path d="M3 7h6l2 2h10v8a2 2 0 0 1-2 2H3z" />
-    <circle cx="9" cy="13" r="1" />
-    <circle cx="15" cy="17" r="1" />
-    <path d="M9 14v3l6-1v-2" />
+    <path d="M3 8h6l2 2h10v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2Z" />
+    <path d="M3 8V6.5a2 2 0 0 1 2-2h4l2 2h8.5" />
+    <circle cx="10.5" cy="14" r="1" />
+    <circle cx="14.5" cy="14" r="1" />
+    <circle cx="14.5" cy="17" r="1" />
+    <path d="M11.5 14h2" />
+    <path d="M14.5 15v2" />
   </IconBase>
 );
 
