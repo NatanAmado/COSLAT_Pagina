@@ -10,9 +10,9 @@ export default function Sidebar() {
 
   const navItems: { name: string; href: string; icon: JSX.Element }[] = [
     { name: "INICIO", href: "/", icon: <Globe size={20} /> },
-    { name: "PRINCIPIOS", href: "#principios", icon: <Cpu size={20} /> },
-    { name: "ESTRUCTURA", href: "#estructura", icon: <Users size={20} /> },
-    { name: "FINES", href: "#fines", icon: <Target size={20} /> },
+    { name: "PRINCIPIOS", href: "/#principios", icon: <Cpu size={20} /> },
+    { name: "ESTRUCTURA", href: "/#estructura", icon: <Users size={20} /> },
+    { name: "FINES", href: "/#fines", icon: <Target size={20} /> },
     { name: "EVENTOS", href: "/eventos", icon: <CalendarRange size={20} /> },
     { name: "PROYECTOS", href: "/proyectos", icon: <FolderGit2 size={20} /> },
   ];
