@@ -1,5 +1,3 @@
-"use client";
-import { useEffect, useState } from "react";
 import {
   ArrowRight,
   Lock,
@@ -12,20 +10,14 @@ import {
   ExternalLink
 } from "@/components/icons";
 import { events } from "@/lib/events";
+import { youtubeUpdatedAt, youtubeVideos } from "@/lib/youtube";
+import AsciiIndio from "@/components/AsciiIndio";
+import YouTubeSection from "@/components/YouTubeSection";
 
 const INCA_PATTERN =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M5 0h6v5h5v6h-5v5H5v-5H0V5h5z' fill='%23FECF01'/%3E%3C/svg%3E";
 
 export default function Home() {
-  const [asciiIndio, setAsciiIndio] = useState("");
-
-  useEffect(() => {
-    fetch("/ascii_indio.txt")
-      .then((res) => res.text())
-      .then((text) => setAsciiIndio(text))
-      .catch(() => setAsciiIndio(""));
-  }, []);
-
   return (
     <div className="bg-white selection:bg-coslat-yellow selection:text-coslat-blue">
       
@@ -34,13 +26,7 @@ export default function Home() {
         {/* Elementos decorativos de fondo */}
         <div className="absolute inset-0 bg-dither opacity-20 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-coslat-yellow opacity-10 hidden lg:block skew-x-12 transform translate-x-20"></div>
-        {asciiIndio && (
-          <div className="pointer-events-none absolute inset-0 flex items-end justify-end pr-4 md:pr-10 pb-4">
-            <pre className="mr-[-96px] md:mr-[-140px] lg:mr-[-180px] text-coslat-yellow/50 font-mono text-[6px] sm:text-[7px] md:text-[8px] lg:text-[9px] xl:text-[10px] leading-[6px] sm:leading-[7px] md:leading-[8px] lg:leading-[9px] whitespace-pre text-right mix-blend-screen drop-shadow-[0_0_10px_rgba(0,0,0,0.4)] opacity-85 max-h-full overflow-hidden">
-              {asciiIndio}
-            </pre>
-          </div>
-        )}
+        <AsciiIndio />
 
         <div className="container mx-auto px-6 py-20 flex flex-col items-start justify-center gap-12 flex-1 relative z-10">
           <div className="flex-1 w-full">
@@ -135,6 +121,8 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      <YouTubeSection videos={youtubeVideos} updatedAt={youtubeUpdatedAt} />
 
       {/* --- LLAMADO A LA ACCIÓN (Basado en la imagen 2) --- */}
       <section id="estructura" className="relative bg-white text-coslat-blue py-20 overflow-hidden">
@@ -264,6 +252,12 @@ export default function Home() {
             </a>
             <a href="https://www.facebook.com/profile.php?id=61583295762837" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
               Facebook
+            </a>
+            <a href="https://www.tiktok.com/@cos.lat" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              TikTok
+            </a>
+            <a href="https://www.youtube.com/@COS_LAT" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
+              YouTube
             </a>
             <a href="https://github.com/NatanAmado/COSLAT_Pagina" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
               GitHub
