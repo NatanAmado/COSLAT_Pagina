@@ -12,7 +12,9 @@ export default function NewsletterForm({ className }: Props) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
-  const endpoint = process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT || "";
+  const endpoint =
+    process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT ||
+    "https://coslat-subscribe.natan-amado.workers.dev";
 
   return (
     <form
