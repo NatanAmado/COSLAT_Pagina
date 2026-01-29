@@ -43,7 +43,7 @@ export default function YouTubeSection({ videos, updatedAt }: Props) {
           <div className="space-y-3">
             <div>
               <p className="font-mono uppercase text-xs tracking-[0.2em] text-coslat-dark">YouTube</p>
-              <h3 className="font-title text-4xl md:text-5xl">Últimos shorts</h3>
+              <h3 className="font-title text-4xl md:text-5xl">Últimos videos</h3>
             </div>
             <p className="font-mono text-sm md:text-base text-coslat-dark/80 max-w-xl">
               Lo más reciente del canal de COSLAT. También puedes compartir tu video, imagen o pieza artística
