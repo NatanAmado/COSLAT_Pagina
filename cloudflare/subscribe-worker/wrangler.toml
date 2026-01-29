@@ -1,0 +1,8 @@
+name = "coslat-subscribe"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Uncomment and set your route if using a custom domain
+# routes = [
+#   { pattern = "https://tu-dominio.com/api/subscribe", zone_name = "tu-dominio.com" }
+# ]

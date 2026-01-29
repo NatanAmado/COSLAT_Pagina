@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ArrowRight,
   Lock,
@@ -13,6 +14,7 @@ import { events } from "@/lib/events";
 import { youtubeUpdatedAt, youtubeVideos } from "@/lib/youtube";
 import AsciiIndio from "@/components/AsciiIndio";
 import YouTubeSection from "@/components/YouTubeSection";
+import NewsletterForm from "@/components/NewsletterForm";
 
 const INCA_PATTERN =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M5 0h6v5h5v6h-5v5H5v-5H0V5h5z' fill='%23FECF01'/%3E%3C/svg%3E";
@@ -55,7 +57,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="bg-coslat-yellow text-coslat-blue font-pixel text-xl px-8 py-4 hover:bg-white transition-colors uppercase border-b-4 border-black active:border-b-0 active:translate-y-1 inline-flex items-center justify-center"
               >
-                Reimaginar el Futuro
+                Unirme
               </a>
               <a
                 href="/manifiesto"
@@ -80,20 +82,30 @@ export default function Home() {
       {events.length > 0 && (
         <section className="bg-white text-coslat-blue py-16 border-b-8 border-coslat-yellow">
           <div className="container mx-auto px-6 space-y-10">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div>
+            <div className="w-full max-w-3xl border-2 border-coslat-blue bg-white p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.15)] mx-auto">
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-coslat-dark">Newsletter</p>
+              <p className="font-mono text-sm text-coslat-dark/80 mt-1">
+                Recibe novedades, eventos y convocatorias en tu correo.
+              </p>
+              <div className="mt-4 flex flex-col sm:flex-row sm:items-end gap-3">
+                <NewsletterForm className="flex-1" />
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+              <div className="max-w-xl">
                 <p className="font-mono uppercase text-xs tracking-[0.2em] text-coslat-dark">Calendario</p>
                 <h3 className="font-title text-4xl md:text-5xl">Próximos eventos</h3>
                 <p className="font-mono text-sm md:text-base text-coslat-dark/80 mt-2">
                   Sigue las acciones del colectivo y súmate a la próxima sesión.
                 </p>
               </div>
-              <a
+              <Link
                 href="/eventos"
-                className="inline-flex items-center gap-2 font-mono uppercase border-2 border-coslat-blue px-4 py-2 hover:bg-coslat-blue hover:text-white transition-colors"
+                className="inline-flex items-center justify-center gap-2 font-mono uppercase border-2 border-coslat-blue px-4 py-2 hover:bg-coslat-blue hover:text-white transition-colors"
               >
                 Ver todos <ArrowRight size={16} />
-              </a>
+              </Link>
             </div>
 
             <div className="grid gap-4 md:grid-cols-3">
@@ -124,41 +136,8 @@ export default function Home() {
 
       <YouTubeSection videos={youtubeVideos} updatedAt={youtubeUpdatedAt} />
 
-      {/* --- LLAMADO A LA ACCIÓN (Basado en la imagen 2) --- */}
-      <section id="estructura" className="relative bg-white text-coslat-blue py-20 overflow-hidden">
-        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <div>
-            <h3 className="font-title text-4xl md:text-5xl mb-6">Llamamos a artistas,<br/>desarrolladores,<br/>revolucionarios.</h3>
-            <div className="bg-coslat-blue text-white p-6 inline-block transform -rotate-1 mb-8">
-              <span className="font-pixel text-2xl md:text-3xl">A reimaginar el futuro de América Latina.</span>
-            </div>
-            <p className="font-mono text-lg leading-relaxed mb-6">
-              Sé parte de nuestro Colectivo Autónomo Descentralizado.
-              Construyamos chips, infraestructura digital y sistemas económicos que nos pertenezcan.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:items-center z-10">
-              <a
-                href="https://discord.gg/hsNkj4aWh8"
-                target="_blank"
-                rel="noreferrer"
-                className="w-full sm:w-auto text-center bg-coslat-accent text-white font-mono px-6 py-3 uppercase flex items-center justify-center gap-2 border-2 border-coslat-accent hover:bg-white hover:text-coslat-accent transition-colors"
-              >
-                Únete al Discord <MessageCircle size={18} />
-              </a>
-            </div>
-          </div>
-          <div className="relative w-full min-h-[18rem] md:min-h-[30rem] flex items-end justify-center md:justify-end">
-            <img
-              src="/Antorcha.png"
-              alt="Antorcha COSLAT"
-              className="block m-0 w-full max-w-[14rem] sm:max-w-[18rem] md:max-w-[20rem] lg:max-w-[22rem] h-auto object-contain"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* --- BASES Y PRINCIPIOS --- */}
-      <section id="principios" className="py-24 bg-coslat-light text-white relative">
+      <section id="principios" className="py-24 bg-coslat-accent text-white relative">
         <div className="container mx-auto px-6">
           <div className="flex items-end gap-4 mb-16 border-b border-gray-700 pb-4">
              <h2 className="text-6xl font-title text-white">BASES</h2>
@@ -229,6 +208,39 @@ export default function Home() {
               number="III" 
               title="Política Regional"
               desc="Crear las bases para un sistema político regional descentralizado."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* --- LLAMADO A LA ACCIÓN (Basado en la imagen 2) --- */}
+      <section id="estructura" className="relative bg-white text-coslat-blue py-20 overflow-hidden">
+        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h3 className="font-title text-4xl md:text-5xl mb-6">Llamamos a artistas,<br/>desarrolladores,<br/>revolucionarios.</h3>
+            <div className="bg-coslat-blue text-white p-6 inline-block transform -rotate-1 mb-8">
+              <span className="font-pixel text-2xl md:text-3xl">A reimaginar el futuro de América Latina.</span>
+            </div>
+            <p className="font-mono text-lg leading-relaxed mb-6">
+              Sé parte de nuestro Colectivo Autónomo Descentralizado.
+              Construyamos chips, infraestructura digital y sistemas económicos que nos pertenezcan.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:items-center z-10">
+              <a
+                href="https://discord.gg/hsNkj4aWh8"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full sm:w-auto text-center bg-coslat-accent text-white font-mono px-6 py-3 uppercase flex items-center justify-center gap-2 border-2 border-coslat-accent hover:bg-white hover:text-coslat-accent transition-colors"
+              >
+                Únete al Discord <MessageCircle size={18} />
+              </a>
+            </div>
+          </div>
+          <div className="relative w-full min-h-[18rem] md:min-h-[30rem] flex items-end justify-center md:justify-end">
+            <img
+              src="/Antorcha.png"
+              alt="Antorcha COSLAT"
+              className="block m-0 w-full max-w-[14rem] sm:max-w-[18rem] md:max-w-[20rem] lg:max-w-[22rem] h-auto object-contain"
             />
           </div>
         </div>
