@@ -1,5 +1,6 @@
 /.DS_Store
 /firebase-debug.log
+/.firebase/
 /node_modules
 /.next
 /out
@@ -10,4 +11,6 @@
 /yarn-debug.log*
 /yarn-error.log*
 *.cache
-.env.production
+.env
+.env.*
+!.env.example
