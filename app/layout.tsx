@@ -25,10 +25,10 @@ export default function RootLayout({
       <body
         className="font-mono bg-white text-coslat-blue antialiased flex flex-col md:flex-row min-h-screen"
       >
-        {/* Left Navigation */}
+        {/* Navegación izquierda */}
         <Sidebar />
         
-        {/* Main Content Area */}
+        {/* Área de contenido principal */}
         <main className="flex-1 md:ml-64 w-full min-h-screen relative overflow-x-hidden">
           {children}
         </main>

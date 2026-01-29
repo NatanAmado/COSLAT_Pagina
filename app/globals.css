@@ -37,7 +37,7 @@ body {
   background: #F5F5F5;
 }
 
-/* Custom Glitch Text Effect */
+/* Efecto de texto glitch personalizado */
 .glitch-text {
   position: relative;
 }
@@ -89,4 +89,4 @@ body {
   background-size: 4px 4px;
 }
 
-/* Static ASCII overlay (no animation to keep it light) */
+/* Superposición ASCII estática (sin animación para mantenerlo liviano) */

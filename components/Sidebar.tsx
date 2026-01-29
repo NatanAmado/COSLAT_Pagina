@@ -66,7 +66,7 @@ export default function Sidebar() {
         </a>
       </div>
       
-      {/* Mobile Menu */}
+      {/* Menú móvil */}
       <button
         aria-label="Toggle menu"
         className="md:hidden flex items-center"

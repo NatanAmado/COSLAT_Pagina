@@ -29,9 +29,9 @@ export default function Home() {
   return (
     <div className="bg-white selection:bg-coslat-yellow selection:text-coslat-blue">
       
-      {/* --- HERO SECTION (Based on Image 1 & 2) --- */}
+      {/* --- SECCIÓN HERO (Basada en las imágenes 1 y 2) --- */}
       <section id="hero" className="min-h-screen flex flex-col relative bg-coslat-blue text-white overflow-hidden">
-        {/* Background Decorative Elements */}
+        {/* Elementos decorativos de fondo */}
         <div className="absolute inset-0 bg-dither opacity-20 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-coslat-yellow opacity-10 hidden lg:block skew-x-12 transform translate-x-20"></div>
         {asciiIndio && (
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Running Banner at bottom */}
+        {/* Banner en movimiento al final */}
         <div className="bg-coslat-yellow text-coslat-blue py-2  overflow-hidden whitespace-nowrap font-pixel text-2xl">
           <div className="animate-marquee inline-block">
             DESCENTRALIZADO +++ ABIERTO +++ SOBERANO +++ UNIDAD LATINA +++ OTRA TECNOLOGÍA ES POSIBLE +++ 
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- UPCOMING EVENTS --- */}
+      {/* --- PRÓXIMOS EVENTOS --- */}
       {events.length > 0 && (
         <section className="bg-white text-coslat-blue py-16 border-b-8 border-coslat-yellow">
           <div className="container mx-auto px-6 space-y-10">
@@ -136,7 +136,7 @@ export default function Home() {
         </section>
       )}
 
-      {/* --- CALL TO ACTION (Based on Image 2) --- */}
+      {/* --- LLAMADO A LA ACCIÓN (Basado en la imagen 2) --- */}
       <section id="estructura" className="relative bg-white text-coslat-blue py-20 overflow-hidden">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- BASES & PRINCIPLES --- */}
+      {/* --- BASES Y PRINCIPIOS --- */}
       <section id="principios" className="py-24 bg-coslat-light text-white relative">
         <div className="container mx-auto px-6">
           <div className="flex items-end gap-4 mb-16 border-b border-gray-700 pb-4">
@@ -178,37 +178,37 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Principle 1 */}
+            {/* Principio 1 */}
             <PrincipleCard 
               title="Colectivismo" 
               icon={<Users />}
               desc="Propiedad comunal de la infraestructura digital." 
             />
-             {/* Principle 2 */}
+             {/* Principio 2 */}
             <PrincipleCard 
               title="Código Abierto" 
               icon={<Code />}
               desc="Transparencia total. El conocimiento es libre." 
             />
-             {/* Principle 3 */}
+             {/* Principio 3 */}
             <PrincipleCard 
               title="Soberanía" 
               icon={<ShieldCheck />}
               desc="Independencia tecnológica de potencias extranjeras." 
             />
-             {/* Principle 4 */}
+             {/* Principio 4 */}
             <PrincipleCard 
               title="Privacidad" 
               icon={<Lock />}
               desc="Protección de datos como derecho humano fundamental." 
             />
-             {/* Principle 5 */}
+             {/* Principio 5 */}
             <PrincipleCard 
               title="Descentralización" 
               icon={<Share2 />}
               desc="Redes distribuidas. Sin puntos únicos de fallo." 
             />
-             {/* Principle 6 */}
+             {/* Principio 6 */}
             <PrincipleCard 
               title="Unidad Latina" 
               icon={<Globe />}
@@ -218,13 +218,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- FINES (Based on the flow chart ends) --- */}
+      {/* --- FINES (Basado en los extremos del diagrama de flujo) --- */}
       <section id="fines" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-5xl font-title text-coslat-blue mb-12 text-center">Nuestros Fines</h2>
           
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 relative">
-            {/* Connector Line */}
+            {/* Línea conectora */}
             <div className="hidden md:block absolute top-12 left-0 w-full h-1 bg-coslat-blue z-0"></div>
 
             <GoalStep 
@@ -246,7 +246,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- FOOTER --- */}
+      {/* --- PIE DE PÁGINA --- */}
       <footer className="relative bg-coslat-dark text-white pt-16 pb-12 overflow-hidden">
         <div
           className="absolute top-0 left-0 w-full h-16"
@@ -275,7 +275,7 @@ export default function Home() {
   );
 }
 
-// Sub-components for cleanliness
+// Subcomponentes para mayor limpieza
 function PrincipleCard({ title, icon, desc }: { title: string, icon: any, desc: string }) {
   return (
     <div className="border border-gray-700 hover:border-coslat-yellow p-6 transition-all hover:-translate-y-1 group bg-black/50">
