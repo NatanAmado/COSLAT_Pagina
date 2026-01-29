@@ -30,7 +30,7 @@ export default function YouTubeSection({ videos, updatedAt }: Props) {
     if (!videos?.length) return [];
     return videos.map((video, index) => ({
       ...video,
-      displayTitle: index === videos.length - 1 ? "ayer" : video.title,
+      displayTitle:  video.title,
       primaryThumb: `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`,
       fallbackThumb: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
     }));
