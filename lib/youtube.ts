@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-01-30T13:54:11.320Z";
+export const youtubeUpdatedAt = "2026-01-31T13:38:59.230Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "M-5Y-KwWPEw",
+    "title": "Tu router podría estar intervenido.",
+    "published": "2026-01-31T00:00:38+00:00",
+    "url": "https://www.youtube.com/shorts/M-5Y-KwWPEw",
+    "thumbnail": "https://i.ytimg.com/vi/M-5Y-KwWPEw/hqdefault.jpg"
+  },
   {
     "id": "IBdobY4iLfs",
     "title": "Por qué Uber necesita intermediarios (y tú no)",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-01-27T02:25:29+00:00",
     "url": "https://www.youtube.com/shorts/2hQ0E_3PjG8",
     "thumbnail": "https://i.ytimg.com/vi/2hQ0E_3PjG8/hqdefault.jpg"
-  },
-  {
-    "id": "rYcgumlzG68",
-    "title": "¿EE.UU. o China? La trampa tecnológica que Latam debe evitar 🇺🇸🇨🇳",
-    "published": "2026-01-26T01:12:41+00:00",
-    "url": "https://www.youtube.com/shorts/rYcgumlzG68",
-    "thumbnail": "https://i.ytimg.com/vi/rYcgumlzG68/hqdefault.jpg"
   }
 ];
