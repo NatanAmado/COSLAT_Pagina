@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-01T13:40:37.722Z";
+export const youtubeUpdatedAt = "2026-02-02T14:00:45.880Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "CFCYxW884LE",
+    "title": "El internet fue secuestrado.",
+    "published": "2026-02-02T00:01:57+00:00",
+    "url": "https://www.youtube.com/shorts/CFCYxW884LE",
+    "thumbnail": "https://i.ytimg.com/vi/CFCYxW884LE/hqdefault.jpg"
+  },
   {
     "id": "Klx2LS0G7As",
     "title": "El Triángulo del Litio: por qué el mundo lo quiere controlar",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-01-29T01:07:41+00:00",
     "url": "https://www.youtube.com/shorts/DLr05ol2gzs",
     "thumbnail": "https://i.ytimg.com/vi/DLr05ol2gzs/hqdefault.jpg"
-  },
-  {
-    "id": "YRBTPRamfoo",
-    "title": "Tu jefe no existe: el algoritmo que controla millones de trabajos",
-    "published": "2026-01-27T22:13:03+00:00",
-    "url": "https://www.youtube.com/shorts/YRBTPRamfoo",
-    "thumbnail": "https://i.ytimg.com/vi/YRBTPRamfoo/hqdefault.jpg"
   }
 ];
