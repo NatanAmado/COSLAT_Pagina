@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-02T14:00:45.880Z";
+export const youtubeUpdatedAt = "2026-02-03T14:03:01.884Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "v6huA73ejcI",
+    "title": "Latinoamérica sí puede fabricar chips (los números lo prueban)",
+    "published": "2026-02-03T00:12:19+00:00",
+    "url": "https://www.youtube.com/shorts/v6huA73ejcI",
+    "thumbnail": "https://i.ytimg.com/vi/v6huA73ejcI/hqdefault.jpg"
+  },
   {
     "id": "CFCYxW884LE",
     "title": "El internet fue secuestrado.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-01-29T18:29:29+00:00",
     "url": "https://www.youtube.com/shorts/IBdobY4iLfs",
     "thumbnail": "https://i.ytimg.com/vi/IBdobY4iLfs/hqdefault.jpg"
-  },
-  {
-    "id": "DLr05ol2gzs",
-    "title": "La IA no es el problema. El sistema sí.",
-    "published": "2026-01-29T01:07:41+00:00",
-    "url": "https://www.youtube.com/shorts/DLr05ol2gzs",
-    "thumbnail": "https://i.ytimg.com/vi/DLr05ol2gzs/hqdefault.jpg"
   }
 ];
