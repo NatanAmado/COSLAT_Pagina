@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-03T14:03:01.884Z";
+export const youtubeUpdatedAt = "2026-02-04T14:01:18.377Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "Anxh1rZs-wU",
+    "title": "Copiar información no es robar.",
+    "published": "2026-02-04T00:48:35+00:00",
+    "url": "https://www.youtube.com/shorts/Anxh1rZs-wU",
+    "thumbnail": "https://i.ytimg.com/vi/Anxh1rZs-wU/hqdefault.jpg"
+  },
   {
     "id": "v6huA73ejcI",
     "title": "Latinoamérica sí puede fabricar chips (los números lo prueban)",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-01-31T00:00:38+00:00",
     "url": "https://www.youtube.com/shorts/M-5Y-KwWPEw",
     "thumbnail": "https://i.ytimg.com/vi/M-5Y-KwWPEw/hqdefault.jpg"
-  },
-  {
-    "id": "IBdobY4iLfs",
-    "title": "Por qué Uber necesita intermediarios (y tú no)",
-    "published": "2026-01-29T18:29:29+00:00",
-    "url": "https://www.youtube.com/shorts/IBdobY4iLfs",
-    "thumbnail": "https://i.ytimg.com/vi/IBdobY4iLfs/hqdefault.jpg"
   }
 ];
