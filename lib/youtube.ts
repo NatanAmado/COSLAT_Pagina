@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-04T14:01:18.377Z";
+export const youtubeUpdatedAt = "2026-02-05T14:04:20.655Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "DYe1WE4oLnY",
+    "title": "Ningún país del mundo se desarrolló con libre comercio.",
+    "published": "2026-02-05T02:07:31+00:00",
+    "url": "https://www.youtube.com/shorts/DYe1WE4oLnY",
+    "thumbnail": "https://i.ytimg.com/vi/DYe1WE4oLnY/hqdefault.jpg"
+  },
   {
     "id": "Anxh1rZs-wU",
     "title": "Copiar información no es robar.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-01-31T22:21:16+00:00",
     "url": "https://www.youtube.com/shorts/Klx2LS0G7As",
     "thumbnail": "https://i.ytimg.com/vi/Klx2LS0G7As/hqdefault.jpg"
-  },
-  {
-    "id": "M-5Y-KwWPEw",
-    "title": "Tu router podría estar intervenido.",
-    "published": "2026-01-31T00:00:38+00:00",
-    "url": "https://www.youtube.com/shorts/M-5Y-KwWPEw",
-    "thumbnail": "https://i.ytimg.com/vi/M-5Y-KwWPEw/hqdefault.jpg"
   }
 ];
