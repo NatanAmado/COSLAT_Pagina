@@ -30,6 +30,7 @@ jobs:
         run: npm run update:youtube
 
       - name: Commit and push if changed
+        id: commit
         run: |
           if git status --porcelain | grep -q "lib/youtube.ts"; then
             git config user.name "github-actions[bot]"
@@ -37,6 +38,21 @@ jobs:
             git add lib/youtube.ts
             git commit -m "chore: update YouTube videos"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "No changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Build
+        if: steps.commit.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Deploy to Firebase Hosting
+        if: steps.commit.outputs.changed == 'true'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_COSLAT_CA00E }}
+          channelId: live
+          projectId: coslat-ca00e
