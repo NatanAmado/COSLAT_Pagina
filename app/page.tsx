@@ -82,19 +82,9 @@ export default function Home() {
       {events.length > 0 && (
         <section className="bg-white text-coslat-blue py-16 border-b-8 border-coslat-yellow">
           <div className="container mx-auto px-6 space-y-10">
-            <div className="w-full max-w-3xl border-2 border-coslat-blue bg-white p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.15)] mx-auto">
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-coslat-dark">Newsletter</p>
-              <p className="font-mono text-sm text-coslat-dark/80 mt-1">
-                Recibe novedades, eventos y convocatorias en tu correo.
-              </p>
-              <div className="mt-4 flex flex-col sm:flex-row sm:items-end gap-3">
-                <NewsletterForm className="flex-1" />
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-              <div className="max-w-xl">
-                <p className="font-mono uppercase text-xs tracking-[0.2em] text-coslat-dark">Calendario</p>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <div className="max-w-xl">
+              <p className="font-mono uppercase text-xs tracking-[0.2em] text-coslat-dark">Calendario</p>
                 <h3 className="font-title text-4xl md:text-5xl">Próximos eventos</h3>
                 <p className="font-mono text-sm md:text-base text-coslat-dark/80 mt-2">
                   Sigue las acciones del colectivo y súmate a la próxima sesión.
@@ -129,6 +119,16 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="w-full max-w-3xl border-2 border-coslat-blue bg-white p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.15)] mx-auto">
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-coslat-dark">Newsletter</p>
+              <p className="font-mono text-sm text-coslat-dark/80 mt-1">
+                Recibe novedades, eventos y convocatorias en tu correo.
+              </p>
+              <div className="mt-4 flex flex-col sm:flex-row sm:items-end gap-3">
+                <NewsletterForm className="flex-1" />
+              </div>
             </div>
           </div>
         </section>
@@ -258,6 +258,15 @@ export default function Home() {
             Colectivo por la Soberanía Latinoamericana del Futuro.
             <br/>Copyleft 2025.
           </p>
+          <div className="mt-8 w-full max-w-3xl border-2 border-coslat-yellow bg-white p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.25)] mx-auto text-left">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-coslat-dark">Newsletter</p>
+            <p className="font-mono text-sm text-coslat-dark/80 mt-1">
+              Recibe novedades, eventos y convocatorias en tu correo.
+            </p>
+            <div className="mt-4">
+              <NewsletterForm />
+            </div>
+          </div>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 font-mono text-sm">
             <a href="https://www.instagram.com/cos.lat/" className="underline underline-offset-4 hover:text-coslat-yellow transition-colors" target="_blank" rel="noreferrer">
               Instagram

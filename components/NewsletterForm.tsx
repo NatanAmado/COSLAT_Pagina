@@ -63,7 +63,7 @@ export default function NewsletterForm({ className }: Props) {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="inline-flex items-center justify-center gap-2 font-mono uppercase border-2 border-coslat-blue px-4 py-2 hover:bg-coslat-blue hover:text-white transition-colors disabled:opacity-60"
+          className="inline-flex items-center justify-center gap-2 font-mono uppercase border-2 border-coslat-accent bg-coslat-accent text-white px-4 py-2 hover:bg-coslat-yellow hover:text-coslat-blue hover:border-coslat-yellow transition-colors disabled:opacity-60"
         >
           {status === "loading" ? "Enviando..." : "Suscribirme"}
         </button>
