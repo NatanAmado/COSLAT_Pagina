@@ -46,11 +46,11 @@ export default function Home() {
 
             <p className="font-mono text-lg md:text-xl max-w-2xl mb-12 border-l-4 border-coslat-yellow pl-6 py-2">
               Somos un colectivo de desarrolladores, artistas y visionarios dispuestos a
-              rediseñar un futuro para Latinoamérica que no venga de afuera.
+              rediseñar un futuro para Latinoamérica desde Latinoamérica.
               <br />
               <strong>
                 Creemos en volver a la tecnología una herramienta emancipadora, no una
-                que profundice nuestra dependencia y marginalidad.
+                que profundice la dependencia y marginalidad del sur.
               </strong>
             </p>
 
