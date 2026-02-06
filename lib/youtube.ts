@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-05T14:04:20.655Z";
+export const youtubeUpdatedAt = "2026-02-06T14:00:31.847Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "HZb9PcUmQzk",
+    "title": "La guerra ahora se alquila.",
+    "published": "2026-02-06T01:26:02+00:00",
+    "url": "https://www.youtube.com/shorts/HZb9PcUmQzk",
+    "thumbnail": "https://i.ytimg.com/vi/HZb9PcUmQzk/hqdefault.jpg"
+  },
   {
     "id": "DYe1WE4oLnY",
     "title": "Ningún país del mundo se desarrolló con libre comercio.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-02T00:01:57+00:00",
     "url": "https://www.youtube.com/shorts/CFCYxW884LE",
     "thumbnail": "https://i.ytimg.com/vi/CFCYxW884LE/hqdefault.jpg"
-  },
-  {
-    "id": "Klx2LS0G7As",
-    "title": "El Triángulo del Litio: por qué el mundo lo quiere controlar",
-    "published": "2026-01-31T22:21:16+00:00",
-    "url": "https://www.youtube.com/shorts/Klx2LS0G7As",
-    "thumbnail": "https://i.ytimg.com/vi/Klx2LS0G7As/hqdefault.jpg"
   }
 ];
