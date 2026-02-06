@@ -38,6 +38,9 @@ export default function ProyectosPage() {
                   {project.focus}
                 </span>
               </div>
+              <p className="font-mono text-sm text-coslat-dark/80">
+                {project.description}
+              </p>
             </div>
           ))}
         </div>
