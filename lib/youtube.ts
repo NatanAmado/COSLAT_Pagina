@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-06T14:00:31.847Z";
+export const youtubeUpdatedAt = "2026-02-07T13:41:25.862Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "4nOSVIH2dR4",
+    "title": "¿Y si creamos un futuro latinoamericano?",
+    "published": "2026-02-06T21:37:47+00:00",
+    "url": "https://www.youtube.com/shorts/4nOSVIH2dR4",
+    "thumbnail": "https://i.ytimg.com/vi/4nOSVIH2dR4/hqdefault.jpg"
+  },
   {
     "id": "HZb9PcUmQzk",
     "title": "La guerra ahora se alquila.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-03T00:12:19+00:00",
     "url": "https://www.youtube.com/shorts/v6huA73ejcI",
     "thumbnail": "https://i.ytimg.com/vi/v6huA73ejcI/hqdefault.jpg"
-  },
-  {
-    "id": "CFCYxW884LE",
-    "title": "El internet fue secuestrado.",
-    "published": "2026-02-02T00:01:57+00:00",
-    "url": "https://www.youtube.com/shorts/CFCYxW884LE",
-    "thumbnail": "https://i.ytimg.com/vi/CFCYxW884LE/hqdefault.jpg"
   }
 ];
