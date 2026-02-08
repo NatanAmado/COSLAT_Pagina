@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-07T13:41:25.862Z";
+export const youtubeUpdatedAt = "2026-02-08T13:42:12.832Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "Sw2WyOD95Gk",
+    "title": "¿La IA está destruyendo tu forma de hablar?",
+    "published": "2026-02-07T20:20:07+00:00",
+    "url": "https://www.youtube.com/shorts/Sw2WyOD95Gk",
+    "thumbnail": "https://i.ytimg.com/vi/Sw2WyOD95Gk/hqdefault.jpg"
+  },
   {
     "id": "4nOSVIH2dR4",
     "title": "¿Y si creamos un futuro latinoamericano?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-04T00:48:35+00:00",
     "url": "https://www.youtube.com/shorts/Anxh1rZs-wU",
     "thumbnail": "https://i.ytimg.com/vi/Anxh1rZs-wU/hqdefault.jpg"
-  },
-  {
-    "id": "v6huA73ejcI",
-    "title": "Latinoamérica sí puede fabricar chips (los números lo prueban)",
-    "published": "2026-02-03T00:12:19+00:00",
-    "url": "https://www.youtube.com/shorts/v6huA73ejcI",
-    "thumbnail": "https://i.ytimg.com/vi/v6huA73ejcI/hqdefault.jpg"
   }
 ];
