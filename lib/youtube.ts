@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-08T13:42:12.832Z";
+export const youtubeUpdatedAt = "2026-02-09T14:13:48.308Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "A4ct9gISbwc",
+    "title": "Quién controla los cables, controla el futuro",
+    "published": "2026-02-09T02:10:21+00:00",
+    "url": "https://www.youtube.com/shorts/A4ct9gISbwc",
+    "thumbnail": "https://i.ytimg.com/vi/A4ct9gISbwc/hqdefault.jpg"
+  },
   {
     "id": "Sw2WyOD95Gk",
     "title": "¿La IA está destruyendo tu forma de hablar?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-05T02:07:31+00:00",
     "url": "https://www.youtube.com/shorts/DYe1WE4oLnY",
     "thumbnail": "https://i.ytimg.com/vi/DYe1WE4oLnY/hqdefault.jpg"
-  },
-  {
-    "id": "Anxh1rZs-wU",
-    "title": "Copiar información no es robar.",
-    "published": "2026-02-04T00:48:35+00:00",
-    "url": "https://www.youtube.com/shorts/Anxh1rZs-wU",
-    "thumbnail": "https://i.ytimg.com/vi/Anxh1rZs-wU/hqdefault.jpg"
   }
 ];
