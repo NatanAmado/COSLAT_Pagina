@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-09T14:13:48.308Z";
+export const youtubeUpdatedAt = "2026-02-10T14:20:30.332Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "njXHhiaD0lY",
+    "title": "¿Como podemos acabar con la corrupción en latam?",
+    "published": "2026-02-10T02:30:52+00:00",
+    "url": "https://www.youtube.com/shorts/njXHhiaD0lY",
+    "thumbnail": "https://i.ytimg.com/vi/njXHhiaD0lY/hqdefault.jpg"
+  },
   {
     "id": "A4ct9gISbwc",
     "title": "Quién controla los cables, controla el futuro",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-06T01:26:02+00:00",
     "url": "https://www.youtube.com/shorts/HZb9PcUmQzk",
     "thumbnail": "https://i.ytimg.com/vi/HZb9PcUmQzk/hqdefault.jpg"
-  },
-  {
-    "id": "DYe1WE4oLnY",
-    "title": "Ningún país del mundo se desarrolló con libre comercio.",
-    "published": "2026-02-05T02:07:31+00:00",
-    "url": "https://www.youtube.com/shorts/DYe1WE4oLnY",
-    "thumbnail": "https://i.ytimg.com/vi/DYe1WE4oLnY/hqdefault.jpg"
   }
 ];
