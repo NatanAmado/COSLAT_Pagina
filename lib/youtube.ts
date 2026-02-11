@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-10T14:20:30.332Z";
+export const youtubeUpdatedAt = "2026-02-11T14:14:39.157Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "G0ZjSyM0KQY",
+    "title": "El secreto que Brasil ya no puede esconder.",
+    "published": "2026-02-11T02:20:55+00:00",
+    "url": "https://www.youtube.com/shorts/G0ZjSyM0KQY",
+    "thumbnail": "https://i.ytimg.com/vi/G0ZjSyM0KQY/hqdefault.jpg"
+  },
   {
     "id": "njXHhiaD0lY",
     "title": "¿Como podemos acabar con la corrupción en latam?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-06T21:37:47+00:00",
     "url": "https://www.youtube.com/shorts/4nOSVIH2dR4",
     "thumbnail": "https://i.ytimg.com/vi/4nOSVIH2dR4/hqdefault.jpg"
-  },
-  {
-    "id": "HZb9PcUmQzk",
-    "title": "La guerra ahora se alquila.",
-    "published": "2026-02-06T01:26:02+00:00",
-    "url": "https://www.youtube.com/shorts/HZb9PcUmQzk",
-    "thumbnail": "https://i.ytimg.com/vi/HZb9PcUmQzk/hqdefault.jpg"
   }
 ];
