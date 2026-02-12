@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-11T14:14:39.157Z";
+export const youtubeUpdatedAt = "2026-02-12T14:09:49.718Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "fj7GltHo46I",
+    "title": "Larinoamérica no está en vías de desarrollo.",
+    "published": "2026-02-12T02:09:47+00:00",
+    "url": "https://www.youtube.com/shorts/fj7GltHo46I",
+    "thumbnail": "https://i.ytimg.com/vi/fj7GltHo46I/hqdefault.jpg"
+  },
   {
     "id": "G0ZjSyM0KQY",
     "title": "El secreto que Brasil ya no puede esconder.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-07T20:20:07+00:00",
     "url": "https://www.youtube.com/shorts/Sw2WyOD95Gk",
     "thumbnail": "https://i.ytimg.com/vi/Sw2WyOD95Gk/hqdefault.jpg"
-  },
-  {
-    "id": "4nOSVIH2dR4",
-    "title": "¿Y si creamos un futuro latinoamericano?",
-    "published": "2026-02-06T21:37:47+00:00",
-    "url": "https://www.youtube.com/shorts/4nOSVIH2dR4",
-    "thumbnail": "https://i.ytimg.com/vi/4nOSVIH2dR4/hqdefault.jpg"
   }
 ];
