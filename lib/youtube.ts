@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-13T14:00:22.067Z";
+export const youtubeUpdatedAt = "2026-02-15T13:42:31.564Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "HOSbvKXY688",
+    "title": "Cómo Europa Invalidó el Conocimiento Latino",
+    "published": "2026-02-14T00:39:58+00:00",
+    "url": "https://www.youtube.com/shorts/HOSbvKXY688",
+    "thumbnail": "https://i.ytimg.com/vi/HOSbvKXY688/hqdefault.jpg"
+  },
   {
     "id": "fj7GltHo46I",
     "title": "Larinoamérica no está en vías de desarrollo.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-09T02:10:21+00:00",
     "url": "https://www.youtube.com/shorts/A4ct9gISbwc",
     "thumbnail": "https://i.ytimg.com/vi/A4ct9gISbwc/hqdefault.jpg"
-  },
-  {
-    "id": "Sw2WyOD95Gk",
-    "title": "¿La IA está destruyendo tu forma de hablar?",
-    "published": "2026-02-07T20:20:07+00:00",
-    "url": "https://www.youtube.com/shorts/Sw2WyOD95Gk",
-    "thumbnail": "https://i.ytimg.com/vi/Sw2WyOD95Gk/hqdefault.jpg"
   }
 ];
