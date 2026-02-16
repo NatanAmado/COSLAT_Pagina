@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-15T13:42:31.564Z";
+export const youtubeUpdatedAt = "2026-02-16T14:04:26.364Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "4-nZsPAICMk",
+    "title": "Meta decide quien es tu presidente.",
+    "published": "2026-02-16T01:58:35+00:00",
+    "url": "https://www.youtube.com/shorts/4-nZsPAICMk",
+    "thumbnail": "https://i.ytimg.com/vi/4-nZsPAICMk/hqdefault.jpg"
+  },
   {
     "id": "HOSbvKXY688",
     "title": "Cómo Europa Invalidó el Conocimiento Latino",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-10T02:30:52+00:00",
     "url": "https://www.youtube.com/shorts/njXHhiaD0lY",
     "thumbnail": "https://i.ytimg.com/vi/njXHhiaD0lY/hqdefault.jpg"
-  },
-  {
-    "id": "A4ct9gISbwc",
-    "title": "Quién controla los cables, controla el futuro",
-    "published": "2026-02-09T02:10:21+00:00",
-    "url": "https://www.youtube.com/shorts/A4ct9gISbwc",
-    "thumbnail": "https://i.ytimg.com/vi/A4ct9gISbwc/hqdefault.jpg"
   }
 ];
