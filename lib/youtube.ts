@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-17T14:05:47.053Z";
+export const youtubeUpdatedAt = "2026-02-18T14:06:21.808Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "2U6BllicblU",
+    "title": "POR QUÉ NO SE VENDE LA TECNOLOGÍA BUENA PARA NOSOTROS",
+    "published": "2026-02-18T03:01:44+00:00",
+    "url": "https://www.youtube.com/shorts/2U6BllicblU",
+    "thumbnail": "https://i.ytimg.com/vi/2U6BllicblU/hqdefault.jpg"
+  },
   {
     "id": "4-nZsPAICMk",
     "title": "Meta decide quien es tu presidente.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-11T02:20:55+00:00",
     "url": "https://www.youtube.com/shorts/G0ZjSyM0KQY",
     "thumbnail": "https://i.ytimg.com/vi/G0ZjSyM0KQY/hqdefault.jpg"
-  },
-  {
-    "id": "njXHhiaD0lY",
-    "title": "¿Como podemos acabar con la corrupción en latam?",
-    "published": "2026-02-10T02:30:52+00:00",
-    "url": "https://www.youtube.com/shorts/njXHhiaD0lY",
-    "thumbnail": "https://i.ytimg.com/vi/njXHhiaD0lY/hqdefault.jpg"
   }
 ];
