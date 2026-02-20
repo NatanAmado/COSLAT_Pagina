@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-19T14:08:16.286Z";
+export const youtubeUpdatedAt = "2026-02-20T13:59:18.153Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "JmljMXy6P7Y",
+    "title": "Una IA Descentralizada es Posible",
+    "published": "2026-02-20T01:36:51+00:00",
+    "url": "https://www.youtube.com/shorts/JmljMXy6P7Y",
+    "thumbnail": "https://i.ytimg.com/vi/JmljMXy6P7Y/hqdefault.jpg"
+  },
   {
     "id": "2U6BllicblU",
     "title": "POR QUÉ NO SE VENDE LA TECNOLOGÍA BUENA PARA NOSOTROS",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-12T02:09:47+00:00",
     "url": "https://www.youtube.com/shorts/fj7GltHo46I",
     "thumbnail": "https://i.ytimg.com/vi/fj7GltHo46I/hqdefault.jpg"
-  },
-  {
-    "id": "G0ZjSyM0KQY",
-    "title": "El secreto que Brasil ya no puede esconder.",
-    "published": "2026-02-11T02:20:55+00:00",
-    "url": "https://www.youtube.com/shorts/G0ZjSyM0KQY",
-    "thumbnail": "https://i.ytimg.com/vi/G0ZjSyM0KQY/hqdefault.jpg"
   }
 ];
