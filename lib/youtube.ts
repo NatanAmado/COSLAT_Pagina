@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-21T13:40:11.213Z";
+export const youtubeUpdatedAt = "2026-02-22T13:41:33.596Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "jLSFZuO5ZaU",
+    "title": "TENEMOS QUE PROHIBIR LAS REDES SOCIALES PARA MENORES DE EDAD",
+    "published": "2026-02-21T14:08:17+00:00",
+    "url": "https://www.youtube.com/shorts/jLSFZuO5ZaU",
+    "thumbnail": "https://i.ytimg.com/vi/jLSFZuO5ZaU/hqdefault.jpg"
+  },
   {
     "id": "JmljMXy6P7Y",
     "title": "Una IA Descentralizada es Posible",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-14T00:39:58+00:00",
     "url": "https://www.youtube.com/shorts/HOSbvKXY688",
     "thumbnail": "https://i.ytimg.com/vi/HOSbvKXY688/hqdefault.jpg"
-  },
-  {
-    "id": "fj7GltHo46I",
-    "title": "Larinoamérica no está en vías de desarrollo.",
-    "published": "2026-02-12T02:09:47+00:00",
-    "url": "https://www.youtube.com/shorts/fj7GltHo46I",
-    "thumbnail": "https://i.ytimg.com/vi/fj7GltHo46I/hqdefault.jpg"
   }
 ];
