@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-22T13:41:33.596Z";
+export const youtubeUpdatedAt = "2026-02-23T14:06:44.194Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "nXP-53XMYhY",
+    "title": "Torrent podía haber salvado al intenet",
+    "published": "2026-02-23T03:00:51+00:00",
+    "url": "https://www.youtube.com/shorts/nXP-53XMYhY",
+    "thumbnail": "https://i.ytimg.com/vi/nXP-53XMYhY/hqdefault.jpg"
+  },
   {
     "id": "jLSFZuO5ZaU",
     "title": "TENEMOS QUE PROHIBIR LAS REDES SOCIALES PARA MENORES DE EDAD",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-16T01:58:35+00:00",
     "url": "https://www.youtube.com/shorts/4-nZsPAICMk",
     "thumbnail": "https://i.ytimg.com/vi/4-nZsPAICMk/hqdefault.jpg"
-  },
-  {
-    "id": "HOSbvKXY688",
-    "title": "Cómo Europa Invalidó el Conocimiento Latino",
-    "published": "2026-02-14T00:39:58+00:00",
-    "url": "https://www.youtube.com/shorts/HOSbvKXY688",
-    "thumbnail": "https://i.ytimg.com/vi/HOSbvKXY688/hqdefault.jpg"
   }
 ];
