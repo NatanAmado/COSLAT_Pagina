@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-03-06T13:53:15.224Z";
+export const youtubeUpdatedAt = "2026-03-07T13:36:51.191Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "wYiExvC05h4",
+    "title": "Lo que ChatGPT NO QUIERE QUE SEPAS (IA Gratis Para Siempre)",
+    "published": "2026-03-07T05:00:57+00:00",
+    "url": "https://www.youtube.com/shorts/wYiExvC05h4",
+    "thumbnail": "https://i.ytimg.com/vi/wYiExvC05h4/hqdefault.jpg"
+  },
   {
     "id": "nXP-53XMYhY",
     "title": "Torrent podía haber salvado al intenet",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-18T03:01:44+00:00",
     "url": "https://www.youtube.com/shorts/2U6BllicblU",
     "thumbnail": "https://i.ytimg.com/vi/2U6BllicblU/hqdefault.jpg"
-  },
-  {
-    "id": "4-nZsPAICMk",
-    "title": "Meta decide quien es tu presidente.",
-    "published": "2026-02-16T01:58:35+00:00",
-    "url": "https://www.youtube.com/shorts/4-nZsPAICMk",
-    "thumbnail": "https://i.ytimg.com/vi/4-nZsPAICMk/hqdefault.jpg"
   }
 ];
