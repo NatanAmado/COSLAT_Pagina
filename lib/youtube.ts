@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-03-28T13:49:18.969Z";
+export const youtubeUpdatedAt = "2026-03-29T13:51:22.364Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "UyY8i7rgxsQ",
+    "title": "CHATGPT va a hacer MÁS POBRE a LATINOAMÉRICA.",
+    "published": "2026-03-28T22:00:31+00:00",
+    "url": "https://www.youtube.com/shorts/UyY8i7rgxsQ",
+    "thumbnail": "https://i.ytimg.com/vi/UyY8i7rgxsQ/hqdefault.jpg"
+  },
   {
     "id": "wYiExvC05h4",
     "title": "Lo que ChatGPT NO QUIERE QUE SEPAS (IA Gratis Para Siempre)",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-20T01:36:51+00:00",
     "url": "https://www.youtube.com/shorts/JmljMXy6P7Y",
     "thumbnail": "https://i.ytimg.com/vi/JmljMXy6P7Y/hqdefault.jpg"
-  },
-  {
-    "id": "2U6BllicblU",
-    "title": "POR QUÉ NO SE VENDE LA TECNOLOGÍA BUENA PARA NOSOTROS",
-    "published": "2026-02-18T03:01:44+00:00",
-    "url": "https://www.youtube.com/shorts/2U6BllicblU",
-    "thumbnail": "https://i.ytimg.com/vi/2U6BllicblU/hqdefault.jpg"
   }
 ];
