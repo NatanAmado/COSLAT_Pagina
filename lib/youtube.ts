@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-04-02T14:21:05.796Z";
+export const youtubeUpdatedAt = "2026-04-03T14:01:47.902Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "4q8MH-4YzeU",
+    "title": "ASÍ LA IA NOS HARÁ POBRES",
+    "published": "2026-04-02T23:52:24+00:00",
+    "url": "https://www.youtube.com/shorts/4q8MH-4YzeU",
+    "thumbnail": "https://i.ytimg.com/vi/4q8MH-4YzeU/hqdefault.jpg"
+  },
   {
     "id": "UyY8i7rgxsQ",
     "title": "CHATGPT va a hacer MÁS POBRE a LATINOAMÉRICA.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-21T14:08:17+00:00",
     "url": "https://www.youtube.com/shorts/jLSFZuO5ZaU",
     "thumbnail": "https://i.ytimg.com/vi/jLSFZuO5ZaU/hqdefault.jpg"
-  },
-  {
-    "id": "JmljMXy6P7Y",
-    "title": "Una IA Descentralizada es Posible",
-    "published": "2026-02-20T01:36:51+00:00",
-    "url": "https://www.youtube.com/shorts/JmljMXy6P7Y",
-    "thumbnail": "https://i.ytimg.com/vi/JmljMXy6P7Y/hqdefault.jpg"
   }
 ];
