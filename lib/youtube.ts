@@ -6,15 +6,15 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-04-03T14:01:47.902Z";
+export const youtubeUpdatedAt = "2026-04-04T13:51:30.833Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
   {
-    "id": "4q8MH-4YzeU",
-    "title": "ASÍ LA IA NOS HARÁ POBRES",
-    "published": "2026-04-02T23:52:24+00:00",
-    "url": "https://www.youtube.com/shorts/4q8MH-4YzeU",
-    "thumbnail": "https://i.ytimg.com/vi/4q8MH-4YzeU/hqdefault.jpg"
+    "id": "wXJyr71lpgg",
+    "title": "Cómo ChatGPT nos hará más dependientes.",
+    "published": "2026-04-03T23:48:28+00:00",
+    "url": "https://www.youtube.com/shorts/wXJyr71lpgg",
+    "thumbnail": "https://i.ytimg.com/vi/wXJyr71lpgg/hqdefault.jpg"
   },
   {
     "id": "UyY8i7rgxsQ",
