@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-04-07T14:29:08.754Z";
+export const youtubeUpdatedAt = "2026-04-08T14:44:45.798Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "mGtTsVlNyCI",
+    "title": "Nuestros minerales nos harán POBRES por culpa de la IA.",
+    "published": "2026-04-08T11:30:51+00:00",
+    "url": "https://www.youtube.com/shorts/mGtTsVlNyCI",
+    "thumbnail": "https://i.ytimg.com/vi/mGtTsVlNyCI/hqdefault.jpg"
+  },
   {
     "id": "wXJyr71lpgg",
     "title": "Cómo ChatGPT nos hará más dependientes.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-02-23T03:00:51+00:00",
     "url": "https://www.youtube.com/shorts/nXP-53XMYhY",
     "thumbnail": "https://i.ytimg.com/vi/nXP-53XMYhY/hqdefault.jpg"
-  },
-  {
-    "id": "jLSFZuO5ZaU",
-    "title": "TENEMOS QUE PROHIBIR LAS REDES SOCIALES PARA MENORES DE EDAD",
-    "published": "2026-02-21T14:08:17+00:00",
-    "url": "https://www.youtube.com/shorts/jLSFZuO5ZaU",
-    "thumbnail": "https://i.ytimg.com/vi/jLSFZuO5ZaU/hqdefault.jpg"
   }
 ];
