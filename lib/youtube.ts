@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-04-10T14:15:55.252Z";
+export const youtubeUpdatedAt = "2026-04-11T13:54:17.886Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "BdEE-ing8_4",
+    "title": "Como los CHIPS drenan dinero de LatAm.",
+    "published": "2026-04-11T10:15:01+00:00",
+    "url": "https://www.youtube.com/shorts/BdEE-ing8_4",
+    "thumbnail": "https://i.ytimg.com/vi/BdEE-ing8_4/hqdefault.jpg"
+  },
   {
     "id": "mGtTsVlNyCI",
     "title": "Nuestros minerales nos harán POBRES por culpa de la IA.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-03-07T05:00:57+00:00",
     "url": "https://www.youtube.com/shorts/wYiExvC05h4",
     "thumbnail": "https://i.ytimg.com/vi/wYiExvC05h4/hqdefault.jpg"
-  },
-  {
-    "id": "nXP-53XMYhY",
-    "title": "Torrent podía haber salvado al intenet",
-    "published": "2026-02-23T03:00:51+00:00",
-    "url": "https://www.youtube.com/shorts/nXP-53XMYhY",
-    "thumbnail": "https://i.ytimg.com/vi/nXP-53XMYhY/hqdefault.jpg"
   }
 ];
