@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-04-29T15:09:53.509Z";
+export const youtubeUpdatedAt = "2026-04-30T15:06:40.778Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "ea_rZ0Cy6pI",
+    "title": "¿Dónde viven tus datos?",
+    "published": "2026-04-29T21:58:10+00:00",
+    "url": "https://www.youtube.com/shorts/ea_rZ0Cy6pI",
+    "thumbnail": "https://i.ytimg.com/vi/ea_rZ0Cy6pI/hqdefault.jpg"
+  },
   {
     "id": "BdEE-ing8_4",
     "title": "Como los CHIPS drenan dinero de LatAm.",
@@ -32,16 +39,9 @@ export const youtubeVideos: YoutubeVideo[] = [
   },
   {
     "id": "UyY8i7rgxsQ",
-    "title": "CHATGPT va a hacer MÁS POBRE a LATINOAMÉRICA.",
+    "title": "Por ESTO la IA hará a LATINOAMÉRICA MÁS POBRE.",
     "published": "2026-03-28T22:00:31+00:00",
     "url": "https://www.youtube.com/shorts/UyY8i7rgxsQ",
     "thumbnail": "https://i.ytimg.com/vi/UyY8i7rgxsQ/hqdefault.jpg"
-  },
-  {
-    "id": "wYiExvC05h4",
-    "title": "Lo que ChatGPT NO QUIERE QUE SEPAS (IA Gratis Para Siempre)",
-    "published": "2026-03-07T05:00:57+00:00",
-    "url": "https://www.youtube.com/shorts/wYiExvC05h4",
-    "thumbnail": "https://i.ytimg.com/vi/wYiExvC05h4/hqdefault.jpg"
   }
 ];
