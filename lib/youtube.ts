@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-01T14:16:20.115Z";
+export const youtubeUpdatedAt = "2026-05-02T14:09:30.461Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "gSP-o6BJpPQ",
+    "title": "Perdimos control del internet.",
+    "published": "2026-05-01T22:56:40+00:00",
+    "url": "https://www.youtube.com/shorts/gSP-o6BJpPQ",
+    "thumbnail": "https://i.ytimg.com/vi/gSP-o6BJpPQ/hqdefault.jpg"
+  },
   {
     "id": "ea_rZ0Cy6pI",
     "title": "¿Dónde viven tus datos?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-04-03T23:48:28+00:00",
     "url": "https://www.youtube.com/shorts/wXJyr71lpgg",
     "thumbnail": "https://i.ytimg.com/vi/wXJyr71lpgg/hqdefault.jpg"
-  },
-  {
-    "id": "UyY8i7rgxsQ",
-    "title": "Por ESTO la IA hará a LATINOAMÉRICA MÁS POBRE.",
-    "published": "2026-03-28T22:00:31+00:00",
-    "url": "https://www.youtube.com/shorts/UyY8i7rgxsQ",
-    "thumbnail": "https://i.ytimg.com/vi/UyY8i7rgxsQ/hqdefault.jpg"
   }
 ];
