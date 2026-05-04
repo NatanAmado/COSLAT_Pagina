@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-03T14:10:13.581Z";
+export const youtubeUpdatedAt = "2026-05-04T15:08:59.600Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "pyGrTmBXB6I",
+    "title": "El secreto detrás del proyecto Artemis",
+    "published": "2026-05-04T01:03:32+00:00",
+    "url": "https://www.youtube.com/shorts/pyGrTmBXB6I",
+    "thumbnail": "https://i.ytimg.com/vi/pyGrTmBXB6I/hqdefault.jpg"
+  },
   {
     "id": "gSP-o6BJpPQ",
     "title": "Perdimos control del internet.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-04-08T11:30:51+00:00",
     "url": "https://www.youtube.com/shorts/mGtTsVlNyCI",
     "thumbnail": "https://i.ytimg.com/vi/mGtTsVlNyCI/hqdefault.jpg"
-  },
-  {
-    "id": "wXJyr71lpgg",
-    "title": "Cómo ChatGPT nos hará más dependientes.",
-    "published": "2026-04-03T23:48:28+00:00",
-    "url": "https://www.youtube.com/shorts/wXJyr71lpgg",
-    "thumbnail": "https://i.ytimg.com/vi/wXJyr71lpgg/hqdefault.jpg"
   }
 ];
