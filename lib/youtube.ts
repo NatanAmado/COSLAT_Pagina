@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-06T15:25:59.826Z";
+export const youtubeUpdatedAt = "2026-05-07T15:27:17.753Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "5TenwOFrRqE",
+    "title": "La inversión extranjera está haciendo pobre a Latinoamérica.",
+    "published": "2026-05-06T21:42:38+00:00",
+    "url": "https://www.youtube.com/shorts/5TenwOFrRqE",
+    "thumbnail": "https://i.ytimg.com/vi/5TenwOFrRqE/hqdefault.jpg"
+  },
   {
     "id": "yfpwDDCXzTE",
     "title": "El día en el que Chile casi inventa el internet.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-04-29T21:58:10+00:00",
     "url": "https://www.youtube.com/shorts/ea_rZ0Cy6pI",
     "thumbnail": "https://i.ytimg.com/vi/ea_rZ0Cy6pI/hqdefault.jpg"
-  },
-  {
-    "id": "BdEE-ing8_4",
-    "title": "Como los CHIPS drenan dinero de LatAm.",
-    "published": "2026-04-11T10:15:01+00:00",
-    "url": "https://www.youtube.com/shorts/BdEE-ing8_4",
-    "thumbnail": "https://i.ytimg.com/vi/BdEE-ing8_4/hqdefault.jpg"
   }
 ];
