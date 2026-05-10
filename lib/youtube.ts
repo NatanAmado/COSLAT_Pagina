@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-09T14:16:04.767Z";
+export const youtubeUpdatedAt = "2026-05-10T14:19:29.058Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "4SZbZdA2M8g",
+    "title": "Apple es más grande que tu país.",
+    "published": "2026-05-10T04:00:11+00:00",
+    "url": "https://www.youtube.com/shorts/4SZbZdA2M8g",
+    "thumbnail": "https://i.ytimg.com/vi/4SZbZdA2M8g/hqdefault.jpg"
+  },
   {
     "id": "5TenwOFrRqE",
     "title": "La inversión extranjera está haciendo pobre a Latinoamérica.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-01T22:56:40+00:00",
     "url": "https://www.youtube.com/shorts/gSP-o6BJpPQ",
     "thumbnail": "https://i.ytimg.com/vi/gSP-o6BJpPQ/hqdefault.jpg"
-  },
-  {
-    "id": "ea_rZ0Cy6pI",
-    "title": "¿Dónde viven tus datos?",
-    "published": "2026-04-29T21:58:10+00:00",
-    "url": "https://www.youtube.com/shorts/ea_rZ0Cy6pI",
-    "thumbnail": "https://i.ytimg.com/vi/ea_rZ0Cy6pI/hqdefault.jpg"
   }
 ];
