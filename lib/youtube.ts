@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-19T16:15:59.980Z";
+export const youtubeUpdatedAt = "2026-05-20T16:22:28.045Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "jdSnNsj8PUs",
+    "title": "¿Cuánto evaden las Big Tech en impuestos en LatAM?",
+    "published": "2026-05-20T13:01:07+00:00",
+    "url": "https://www.youtube.com/shorts/jdSnNsj8PUs",
+    "thumbnail": "https://i.ytimg.com/vi/jdSnNsj8PUs/hqdefault.jpg"
+  },
   {
     "id": "4SZbZdA2M8g",
     "title": "Apple es más grande que tu país.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-04T21:38:07+00:00",
     "url": "https://www.youtube.com/shorts/zAQTTbpuwsM",
     "thumbnail": "https://i.ytimg.com/vi/zAQTTbpuwsM/hqdefault.jpg"
-  },
-  {
-    "id": "gSP-o6BJpPQ",
-    "title": "Perdimos control del internet.",
-    "published": "2026-05-01T22:56:40+00:00",
-    "url": "https://www.youtube.com/shorts/gSP-o6BJpPQ",
-    "thumbnail": "https://i.ytimg.com/vi/gSP-o6BJpPQ/hqdefault.jpg"
   }
 ];
