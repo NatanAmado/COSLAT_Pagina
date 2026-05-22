@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-21T16:14:45.424Z";
+export const youtubeUpdatedAt = "2026-05-22T15:47:13.471Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "_nt7Tn6xsig",
+    "title": "Nos quitaron los trenes. Y no fue un accidente. 🚂",
+    "published": "2026-05-22T13:33:27+00:00",
+    "url": "https://www.youtube.com/shorts/_nt7Tn6xsig",
+    "thumbnail": "https://i.ytimg.com/vi/_nt7Tn6xsig/hqdefault.jpg"
+  },
   {
     "id": "jdSnNsj8PUs",
     "title": "¿Cuánto evaden las Big Tech en impuestos en LatAM?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-05T23:45:07+00:00",
     "url": "https://www.youtube.com/shorts/yfpwDDCXzTE",
     "thumbnail": "https://i.ytimg.com/vi/yfpwDDCXzTE/hqdefault.jpg"
-  },
-  {
-    "id": "zAQTTbpuwsM",
-    "title": "El lado oscuro del proyecto Artemis.",
-    "published": "2026-05-04T21:38:07+00:00",
-    "url": "https://www.youtube.com/shorts/zAQTTbpuwsM",
-    "thumbnail": "https://i.ytimg.com/vi/zAQTTbpuwsM/hqdefault.jpg"
   }
 ];
