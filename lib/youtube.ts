@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-25T15:48:22.605Z";
+export const youtubeUpdatedAt = "2026-05-26T16:39:39.555Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "GYmhTsb7HeA",
+    "title": "LatAm está pagando para que la superen.",
+    "published": "2026-05-25T19:19:16+00:00",
+    "url": "https://www.youtube.com/shorts/GYmhTsb7HeA",
+    "thumbnail": "https://i.ytimg.com/vi/GYmhTsb7HeA/hqdefault.jpg"
+  },
   {
     "id": "_nt7Tn6xsig",
     "title": "Nos quitaron los trenes. Y no fue un accidente. 🚂",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-06T21:42:38+00:00",
     "url": "https://www.youtube.com/shorts/5TenwOFrRqE",
     "thumbnail": "https://i.ytimg.com/vi/5TenwOFrRqE/hqdefault.jpg"
-  },
-  {
-    "id": "yfpwDDCXzTE",
-    "title": "El día en el que Chile casi inventa el internet.",
-    "published": "2026-05-05T23:45:07+00:00",
-    "url": "https://www.youtube.com/shorts/yfpwDDCXzTE",
-    "thumbnail": "https://i.ytimg.com/vi/yfpwDDCXzTE/hqdefault.jpg"
   }
 ];
