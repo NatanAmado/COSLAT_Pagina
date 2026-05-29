@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-05-28T16:52:30.319Z";
+export const youtubeUpdatedAt = "2026-05-29T16:40:43.573Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "Oz80hTFpkuk",
+    "title": "Cómo la ONU legalizó el robo del fondo marino.",
+    "published": "2026-05-29T12:45:21+00:00",
+    "url": "https://www.youtube.com/shorts/Oz80hTFpkuk",
+    "thumbnail": "https://i.ytimg.com/vi/Oz80hTFpkuk/hqdefault.jpg"
+  },
   {
     "id": "GYmhTsb7HeA",
     "title": "LatAm está pagando para que la superen.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-10T04:00:11+00:00",
     "url": "https://www.youtube.com/shorts/4SZbZdA2M8g",
     "thumbnail": "https://i.ytimg.com/vi/4SZbZdA2M8g/hqdefault.jpg"
-  },
-  {
-    "id": "5TenwOFrRqE",
-    "title": "La inversión extranjera está haciendo pobre a Latinoamérica.",
-    "published": "2026-05-06T21:42:38+00:00",
-    "url": "https://www.youtube.com/shorts/5TenwOFrRqE",
-    "thumbnail": "https://i.ytimg.com/vi/5TenwOFrRqE/hqdefault.jpg"
   }
 ];
