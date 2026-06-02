@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-01T18:35:40.584Z";
+export const youtubeUpdatedAt = "2026-06-02T17:19:02.033Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "tmN0S8LJKOQ",
+    "title": "Tu voto no cuenta.",
+    "published": "2026-06-01T21:52:26+00:00",
+    "url": "https://www.youtube.com/shorts/tmN0S8LJKOQ",
+    "thumbnail": "https://i.ytimg.com/vi/tmN0S8LJKOQ/hqdefault.jpg"
+  },
   {
     "id": "Oz80hTFpkuk",
     "title": "Cómo la ONU legalizó el robo del fondo marino.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-20T13:01:07+00:00",
     "url": "https://www.youtube.com/shorts/jdSnNsj8PUs",
     "thumbnail": "https://i.ytimg.com/vi/jdSnNsj8PUs/hqdefault.jpg"
-  },
-  {
-    "id": "4SZbZdA2M8g",
-    "title": "Apple es más grande que tu país.",
-    "published": "2026-05-10T04:00:11+00:00",
-    "url": "https://www.youtube.com/shorts/4SZbZdA2M8g",
-    "thumbnail": "https://i.ytimg.com/vi/4SZbZdA2M8g/hqdefault.jpg"
   }
 ];
