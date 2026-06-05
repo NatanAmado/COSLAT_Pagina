@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-04T16:19:16.063Z";
+export const youtubeUpdatedAt = "2026-06-05T15:50:53.748Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "9KbPRGXbP10",
+    "title": "¿Quién será dueño de la Antártida?",
+    "published": "2026-06-04T20:43:08+00:00",
+    "url": "https://www.youtube.com/shorts/9KbPRGXbP10",
+    "thumbnail": "https://i.ytimg.com/vi/9KbPRGXbP10/hqdefault.jpg"
+  },
   {
     "id": "tmN0S8LJKOQ",
     "title": "Tu voto no cuenta.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-22T13:33:27+00:00",
     "url": "https://www.youtube.com/shorts/_nt7Tn6xsig",
     "thumbnail": "https://i.ytimg.com/vi/_nt7Tn6xsig/hqdefault.jpg"
-  },
-  {
-    "id": "jdSnNsj8PUs",
-    "title": "¿Cuánto evaden las Big Tech en impuestos en LatAM?",
-    "published": "2026-05-20T13:01:07+00:00",
-    "url": "https://www.youtube.com/shorts/jdSnNsj8PUs",
-    "thumbnail": "https://i.ytimg.com/vi/jdSnNsj8PUs/hqdefault.jpg"
   }
 ];
