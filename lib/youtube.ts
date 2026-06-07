@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-06T14:27:49.199Z";
+export const youtubeUpdatedAt = "2026-06-07T14:50:11.581Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "eFtuZ2jmYps",
+    "title": "Tu Estado No Necesita A Los Políticos.",
+    "published": "2026-06-07T01:05:40+00:00",
+    "url": "https://www.youtube.com/shorts/eFtuZ2jmYps",
+    "thumbnail": "https://i.ytimg.com/vi/eFtuZ2jmYps/hqdefault.jpg"
+  },
   {
     "id": "9KbPRGXbP10",
     "title": "¿Quién será dueño de la Antártida?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-25T19:19:16+00:00",
     "url": "https://www.youtube.com/shorts/GYmhTsb7HeA",
     "thumbnail": "https://i.ytimg.com/vi/GYmhTsb7HeA/hqdefault.jpg"
-  },
-  {
-    "id": "_nt7Tn6xsig",
-    "title": "Nos quitaron los trenes. Y no fue un accidente. 🚂",
-    "published": "2026-05-22T13:33:27+00:00",
-    "url": "https://www.youtube.com/shorts/_nt7Tn6xsig",
-    "thumbnail": "https://i.ytimg.com/vi/_nt7Tn6xsig/hqdefault.jpg"
   }
 ];
