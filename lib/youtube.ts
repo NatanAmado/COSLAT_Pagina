@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-07T14:50:11.581Z";
+export const youtubeUpdatedAt = "2026-06-08T16:46:44.409Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "pUFybuagQCA",
+    "title": "El Pentágono Controla Tu Opinión",
+    "published": "2026-06-08T04:00:15+00:00",
+    "url": "https://www.youtube.com/shorts/pUFybuagQCA",
+    "thumbnail": "https://i.ytimg.com/vi/pUFybuagQCA/hqdefault.jpg"
+  },
   {
     "id": "eFtuZ2jmYps",
     "title": "Tu Estado No Necesita A Los Políticos.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-05-29T12:45:21+00:00",
     "url": "https://www.youtube.com/shorts/Oz80hTFpkuk",
     "thumbnail": "https://i.ytimg.com/vi/Oz80hTFpkuk/hqdefault.jpg"
-  },
-  {
-    "id": "GYmhTsb7HeA",
-    "title": "LatAm está pagando para que la superen.",
-    "published": "2026-05-25T19:19:16+00:00",
-    "url": "https://www.youtube.com/shorts/GYmhTsb7HeA",
-    "thumbnail": "https://i.ytimg.com/vi/GYmhTsb7HeA/hqdefault.jpg"
   }
 ];
