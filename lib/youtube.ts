@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-09T15:52:18.140Z";
+export const youtubeUpdatedAt = "2026-06-10T16:33:20.949Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "1nQY3tA05r0",
+    "title": "Si Compartiste Una Canción Eres un CRIMINAL.",
+    "published": "2026-06-10T01:09:47+00:00",
+    "url": "https://www.youtube.com/shorts/1nQY3tA05r0",
+    "thumbnail": "https://i.ytimg.com/vi/1nQY3tA05r0/hqdefault.jpg"
+  },
   {
     "id": "pUFybuagQCA",
     "title": "El Pentágono Controla Tu Opinión",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-01T21:52:26+00:00",
     "url": "https://www.youtube.com/shorts/tmN0S8LJKOQ",
     "thumbnail": "https://i.ytimg.com/vi/tmN0S8LJKOQ/hqdefault.jpg"
-  },
-  {
-    "id": "Oz80hTFpkuk",
-    "title": "Cómo la ONU legalizó el robo del fondo marino.",
-    "published": "2026-05-29T12:45:21+00:00",
-    "url": "https://www.youtube.com/shorts/Oz80hTFpkuk",
-    "thumbnail": "https://i.ytimg.com/vi/Oz80hTFpkuk/hqdefault.jpg"
   }
 ];
