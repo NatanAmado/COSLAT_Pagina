@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-10T16:33:20.949Z";
+export const youtubeUpdatedAt = "2026-06-11T16:51:44.633Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "Bv2Ds82nL8I",
+    "title": "Apple Rompe Tu Celular a Propósito.",
+    "published": "2026-06-11T01:14:43+00:00",
+    "url": "https://www.youtube.com/shorts/Bv2Ds82nL8I",
+    "thumbnail": "https://i.ytimg.com/vi/Bv2Ds82nL8I/hqdefault.jpg"
+  },
   {
     "id": "1nQY3tA05r0",
     "title": "Si Compartiste Una Canción Eres un CRIMINAL.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-04T20:43:08+00:00",
     "url": "https://www.youtube.com/shorts/9KbPRGXbP10",
     "thumbnail": "https://i.ytimg.com/vi/9KbPRGXbP10/hqdefault.jpg"
-  },
-  {
-    "id": "tmN0S8LJKOQ",
-    "title": "Tu voto no cuenta.",
-    "published": "2026-06-01T21:52:26+00:00",
-    "url": "https://www.youtube.com/shorts/tmN0S8LJKOQ",
-    "thumbnail": "https://i.ytimg.com/vi/tmN0S8LJKOQ/hqdefault.jpg"
   }
 ];
