@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-13T14:57:49.887Z";
+export const youtubeUpdatedAt = "2026-06-14T15:06:58.875Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "2765kUDJ-I4",
+    "title": "Nos Banearon de La IA.",
+    "published": "2026-06-13T23:23:39+00:00",
+    "url": "https://www.youtube.com/shorts/2765kUDJ-I4",
+    "thumbnail": "https://i.ytimg.com/vi/2765kUDJ-I4/hqdefault.jpg"
+  },
   {
     "id": "Bv2Ds82nL8I",
     "title": "Apple Rompe Tu Celular a Propósito.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-07T01:05:40+00:00",
     "url": "https://www.youtube.com/shorts/eFtuZ2jmYps",
     "thumbnail": "https://i.ytimg.com/vi/eFtuZ2jmYps/hqdefault.jpg"
-  },
-  {
-    "id": "9KbPRGXbP10",
-    "title": "¿Quién será dueño de la Antártida?",
-    "published": "2026-06-04T20:43:08+00:00",
-    "url": "https://www.youtube.com/shorts/9KbPRGXbP10",
-    "thumbnail": "https://i.ytimg.com/vi/9KbPRGXbP10/hqdefault.jpg"
   }
 ];
