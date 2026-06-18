@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-17T16:37:04.242Z";
+export const youtubeUpdatedAt = "2026-06-18T16:27:05.170Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "c8mo_jsuA7k",
+    "title": "¿Sabías Que Las Empresas Extranjeras Pueden Denunciar a tu País?",
+    "published": "2026-06-18T00:49:04+00:00",
+    "url": "https://www.youtube.com/shorts/c8mo_jsuA7k",
+    "thumbnail": "https://i.ytimg.com/vi/c8mo_jsuA7k/hqdefault.jpg"
+  },
   {
     "id": "2765kUDJ-I4",
     "title": "Nos Banearon de La IA.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-08T04:00:15+00:00",
     "url": "https://www.youtube.com/shorts/pUFybuagQCA",
     "thumbnail": "https://i.ytimg.com/vi/pUFybuagQCA/hqdefault.jpg"
-  },
-  {
-    "id": "eFtuZ2jmYps",
-    "title": "Tu Estado No Necesita A Los Políticos.",
-    "published": "2026-06-07T01:05:40+00:00",
-    "url": "https://www.youtube.com/shorts/eFtuZ2jmYps",
-    "thumbnail": "https://i.ytimg.com/vi/eFtuZ2jmYps/hqdefault.jpg"
   }
 ];
