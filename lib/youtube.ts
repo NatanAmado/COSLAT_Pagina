@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-06-28T14:46:56.099Z";
+export const youtubeUpdatedAt = "2026-06-29T16:37:24.325Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "adBqgAirovc",
+    "title": "El Cable que EE.UU. No Quiere que Latinoamérica Tenga",
+    "published": "2026-06-28T19:06:16+00:00",
+    "url": "https://www.youtube.com/shorts/adBqgAirovc",
+    "thumbnail": "https://i.ytimg.com/vi/adBqgAirovc/hqdefault.jpg"
+  },
   {
     "id": "c8mo_jsuA7k",
     "title": "¿Sabías Que Las Empresas Extranjeras Pueden Denunciar a tu País?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-10T01:09:47+00:00",
     "url": "https://www.youtube.com/shorts/1nQY3tA05r0",
     "thumbnail": "https://i.ytimg.com/vi/1nQY3tA05r0/hqdefault.jpg"
-  },
-  {
-    "id": "pUFybuagQCA",
-    "title": "El Pentágono Controla Tu Opinión",
-    "published": "2026-06-08T04:00:15+00:00",
-    "url": "https://www.youtube.com/shorts/pUFybuagQCA",
-    "thumbnail": "https://i.ytimg.com/vi/pUFybuagQCA/hqdefault.jpg"
   }
 ];
