@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-07-06T16:17:27.501Z";
+export const youtubeUpdatedAt = "2026-07-07T15:42:18.872Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "TaYXfE7-HLg",
+    "title": "Tu País es UNA MENTIRA.",
+    "published": "2026-07-06T23:15:02+00:00",
+    "url": "https://www.youtube.com/shorts/TaYXfE7-HLg",
+    "thumbnail": "https://i.ytimg.com/vi/TaYXfE7-HLg/hqdefault.jpg"
+  },
   {
     "id": "adBqgAirovc",
     "title": "El Cable que EE.UU. No Quiere que Latinoamérica Tenga",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-11T01:14:43+00:00",
     "url": "https://www.youtube.com/shorts/Bv2Ds82nL8I",
     "thumbnail": "https://i.ytimg.com/vi/Bv2Ds82nL8I/hqdefault.jpg"
-  },
-  {
-    "id": "1nQY3tA05r0",
-    "title": "Si Compartiste Una Canción Eres un CRIMINAL.",
-    "published": "2026-06-10T01:09:47+00:00",
-    "url": "https://www.youtube.com/shorts/1nQY3tA05r0",
-    "thumbnail": "https://i.ytimg.com/vi/1nQY3tA05r0/hqdefault.jpg"
   }
 ];
