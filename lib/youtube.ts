@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-07-11T14:20:23.304Z";
+export const youtubeUpdatedAt = "2026-07-12T14:25:04.605Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "cVy38wMRcnI",
+    "title": "🇵🇾 El único país de América Latina que no le debía nada a nadie. Lo destruyeron por eso.",
+    "published": "2026-07-11T14:48:25+00:00",
+    "url": "https://www.youtube.com/shorts/cVy38wMRcnI",
+    "thumbnail": "https://i.ytimg.com/vi/cVy38wMRcnI/hqdefault.jpg"
+  },
   {
     "id": "TaYXfE7-HLg",
     "title": "Tu País es UNA MENTIRA.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-13T23:23:39+00:00",
     "url": "https://www.youtube.com/shorts/2765kUDJ-I4",
     "thumbnail": "https://i.ytimg.com/vi/2765kUDJ-I4/hqdefault.jpg"
-  },
-  {
-    "id": "Bv2Ds82nL8I",
-    "title": "Apple Rompe Tu Celular a Propósito.",
-    "published": "2026-06-11T01:14:43+00:00",
-    "url": "https://www.youtube.com/shorts/Bv2Ds82nL8I",
-    "thumbnail": "https://i.ytimg.com/vi/Bv2Ds82nL8I/hqdefault.jpg"
   }
 ];
