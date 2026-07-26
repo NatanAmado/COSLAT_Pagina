@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-07-25T14:28:34.029Z";
+export const youtubeUpdatedAt = "2026-07-26T14:27:14.498Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "0aNYzTkNcpc",
+    "title": "Así decide un algoritmo lo que vas a pensar",
+    "published": "2026-07-26T00:59:21+00:00",
+    "url": "https://www.youtube.com/shorts/0aNYzTkNcpc",
+    "thumbnail": "https://i.ytimg.com/vi/0aNYzTkNcpc/hqdefault.jpg"
+  },
   {
     "id": "cVy38wMRcnI",
     "title": "🇵🇾 El único país de América Latina que no le debía nada a nadie. Lo destruyeron por eso.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-18T00:49:04+00:00",
     "url": "https://www.youtube.com/shorts/c8mo_jsuA7k",
     "thumbnail": "https://i.ytimg.com/vi/c8mo_jsuA7k/hqdefault.jpg"
-  },
-  {
-    "id": "2765kUDJ-I4",
-    "title": "Nos Banearon de La IA.",
-    "published": "2026-06-13T23:23:39+00:00",
-    "url": "https://www.youtube.com/shorts/2765kUDJ-I4",
-    "thumbnail": "https://i.ytimg.com/vi/2765kUDJ-I4/hqdefault.jpg"
   }
 ];
