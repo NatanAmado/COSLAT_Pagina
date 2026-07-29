@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-07-28T15:16:56.637Z";
+export const youtubeUpdatedAt = "2026-07-29T15:31:13.724Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "Zn8LvZTibNU",
+    "title": "Corea del Sur era más pobre que tu país. Esto es lo que hicieron distinto.",
+    "published": "2026-07-28T15:41:23+00:00",
+    "url": "https://www.youtube.com/shorts/Zn8LvZTibNU",
+    "thumbnail": "https://i.ytimg.com/vi/Zn8LvZTibNU/hqdefault.jpg"
+  },
   {
     "id": "0aNYzTkNcpc",
     "title": "Así decide un algoritmo lo que vas a pensar",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-06-28T19:06:16+00:00",
     "url": "https://www.youtube.com/shorts/adBqgAirovc",
     "thumbnail": "https://i.ytimg.com/vi/adBqgAirovc/hqdefault.jpg"
-  },
-  {
-    "id": "c8mo_jsuA7k",
-    "title": "¿Sabías Que Las Empresas Extranjeras Pueden Denunciar a tu País?",
-    "published": "2026-06-18T00:49:04+00:00",
-    "url": "https://www.youtube.com/shorts/c8mo_jsuA7k",
-    "thumbnail": "https://i.ytimg.com/vi/c8mo_jsuA7k/hqdefault.jpg"
   }
 ];
