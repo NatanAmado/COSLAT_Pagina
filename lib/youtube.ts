@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-07-31T15:16:21.698Z";
+export const youtubeUpdatedAt = "2026-08-01T14:24:54.417Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "rLRDlQjzqcM",
+    "title": "Nadie te dijo esto sobre tus selfies (y la IA)",
+    "published": "2026-07-31T23:17:40+00:00",
+    "url": "https://www.youtube.com/shorts/rLRDlQjzqcM",
+    "thumbnail": "https://i.ytimg.com/vi/rLRDlQjzqcM/hqdefault.jpg"
+  },
   {
     "id": "Zn8LvZTibNU",
     "title": "Corea del Sur era más pobre que tu país. Esto es lo que hicieron distinto.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-07-06T23:15:02+00:00",
     "url": "https://www.youtube.com/shorts/TaYXfE7-HLg",
     "thumbnail": "https://i.ytimg.com/vi/TaYXfE7-HLg/hqdefault.jpg"
-  },
-  {
-    "id": "adBqgAirovc",
-    "title": "El Cable que EE.UU. No Quiere que Latinoamérica Tenga",
-    "published": "2026-06-28T19:06:16+00:00",
-    "url": "https://www.youtube.com/shorts/adBqgAirovc",
-    "thumbnail": "https://i.ytimg.com/vi/adBqgAirovc/hqdefault.jpg"
   }
 ];
