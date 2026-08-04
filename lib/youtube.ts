@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-08-03T15:41:09.026Z";
+export const youtubeUpdatedAt = "2026-08-04T15:22:28.279Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "rAT9A3rf-jg",
+    "title": "La IA que está DESTRUYENDO libros (y nadie habla de esto)",
+    "published": "2026-08-03T23:05:41+00:00",
+    "url": "https://www.youtube.com/shorts/rAT9A3rf-jg",
+    "thumbnail": "https://i.ytimg.com/vi/rAT9A3rf-jg/hqdefault.jpg"
+  },
   {
     "id": "rLRDlQjzqcM",
     "title": "Nadie te dijo esto sobre tus selfies (y la IA)",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-07-11T14:48:25+00:00",
     "url": "https://www.youtube.com/shorts/cVy38wMRcnI",
     "thumbnail": "https://i.ytimg.com/vi/cVy38wMRcnI/hqdefault.jpg"
-  },
-  {
-    "id": "TaYXfE7-HLg",
-    "title": "Tu País es UNA MENTIRA.",
-    "published": "2026-07-06T23:15:02+00:00",
-    "url": "https://www.youtube.com/shorts/TaYXfE7-HLg",
-    "thumbnail": "https://i.ytimg.com/vi/TaYXfE7-HLg/hqdefault.jpg"
   }
 ];
