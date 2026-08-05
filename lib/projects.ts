@@ -14,7 +14,7 @@ export let projects: ProjectItem[] = [
     focus: "Infraestructura",
     description: "Diseñar una red de cómputo comunitaria para compartir capacidad y autonomía.",
     color: "border-coslat-accent text-coslat-accent",
-    link: "https://discord.gg/X4bqQfmdv",
+    link: "https://discord.gg/XSVKdHeg9R",
   },
   {
     name: "Tooling IA en Español",
@@ -22,7 +22,7 @@ export let projects: ProjectItem[] = [
     focus: "Software",
     description: "Crear herramientas y modelos abiertos en español para la región.",
     color: "border-coslat-blue text-coslat-blue",
-    link: "https://discord.gg/X4bqQfmdv",
+    link: "https://discord.gg/XSVKdHeg9R",
   },
   {
     name: "Kit de Hardware Libre",
@@ -30,7 +30,7 @@ export let projects: ProjectItem[] = [
     focus: "Hardware",
     description: "Prototipos replicables de hardware soberano con documentación abierta.",
     color: "border-coslat-dark text-coslat-dark",
-    link: "https://discord.gg/X4bqQfmdv",
+    link: "https://discord.gg/XSVKdHeg9R",
   },
   {
     name: "Diseño de contenido para redes de COSLAT",
@@ -38,7 +38,7 @@ export let projects: ProjectItem[] = [
     focus: "Divulgación",
     description: "Campañas y piezas visuales para difundir la visión del colectivo.",
     color: "border-coslat-accent text-coslat-accent",
-    link: "https://discord.gg/X4bqQfmdv",
+    link: "https://discord.gg/XSVKdHeg9R",
   },
   {
     name: "Mejora continua del sitio COSLAT",
