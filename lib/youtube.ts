@@ -6,42 +6,42 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-02-11T14:14:39.157Z";
+export const youtubeUpdatedAt = "2026-08-04T15:22:28.279Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
   {
-    "id": "G0ZjSyM0KQY",
-    "title": "El secreto que Brasil ya no puede esconder.",
-    "published": "2026-02-11T02:20:55+00:00",
-    "url": "https://www.youtube.com/shorts/G0ZjSyM0KQY",
-    "thumbnail": "https://i.ytimg.com/vi/G0ZjSyM0KQY/hqdefault.jpg"
+    "id": "rAT9A3rf-jg",
+    "title": "La IA que está DESTRUYENDO libros (y nadie habla de esto)",
+    "published": "2026-08-03T23:05:41+00:00",
+    "url": "https://www.youtube.com/shorts/rAT9A3rf-jg",
+    "thumbnail": "https://i.ytimg.com/vi/rAT9A3rf-jg/hqdefault.jpg"
   },
   {
-    "id": "njXHhiaD0lY",
-    "title": "¿Como podemos acabar con la corrupción en latam?",
-    "published": "2026-02-10T02:30:52+00:00",
-    "url": "https://www.youtube.com/shorts/njXHhiaD0lY",
-    "thumbnail": "https://i.ytimg.com/vi/njXHhiaD0lY/hqdefault.jpg"
+    "id": "rLRDlQjzqcM",
+    "title": "Nadie te dijo esto sobre tus selfies (y la IA)",
+    "published": "2026-07-31T23:17:40+00:00",
+    "url": "https://www.youtube.com/shorts/rLRDlQjzqcM",
+    "thumbnail": "https://i.ytimg.com/vi/rLRDlQjzqcM/hqdefault.jpg"
   },
   {
-    "id": "A4ct9gISbwc",
-    "title": "Quién controla los cables, controla el futuro",
-    "published": "2026-02-09T02:10:21+00:00",
-    "url": "https://www.youtube.com/shorts/A4ct9gISbwc",
-    "thumbnail": "https://i.ytimg.com/vi/A4ct9gISbwc/hqdefault.jpg"
+    "id": "Zn8LvZTibNU",
+    "title": "Corea del Sur era más pobre que tu país. Esto es lo que hicieron distinto.",
+    "published": "2026-07-28T15:41:23+00:00",
+    "url": "https://www.youtube.com/shorts/Zn8LvZTibNU",
+    "thumbnail": "https://i.ytimg.com/vi/Zn8LvZTibNU/hqdefault.jpg"
   },
   {
-    "id": "Sw2WyOD95Gk",
-    "title": "¿La IA está destruyendo tu forma de hablar?",
-    "published": "2026-02-07T20:20:07+00:00",
-    "url": "https://www.youtube.com/shorts/Sw2WyOD95Gk",
-    "thumbnail": "https://i.ytimg.com/vi/Sw2WyOD95Gk/hqdefault.jpg"
+    "id": "0aNYzTkNcpc",
+    "title": "Así decide un algoritmo lo que vas a pensar",
+    "published": "2026-07-26T00:59:21+00:00",
+    "url": "https://www.youtube.com/shorts/0aNYzTkNcpc",
+    "thumbnail": "https://i.ytimg.com/vi/0aNYzTkNcpc/hqdefault.jpg"
   },
   {
-    "id": "4nOSVIH2dR4",
-    "title": "¿Y si creamos un futuro latinoamericano?",
-    "published": "2026-02-06T21:37:47+00:00",
-    "url": "https://www.youtube.com/shorts/4nOSVIH2dR4",
-    "thumbnail": "https://i.ytimg.com/vi/4nOSVIH2dR4/hqdefault.jpg"
+    "id": "cVy38wMRcnI",
+    "title": "🇵🇾 El único país de América Latina que no le debía nada a nadie. Lo destruyeron por eso.",
+    "published": "2026-07-11T14:48:25+00:00",
+    "url": "https://www.youtube.com/shorts/cVy38wMRcnI",
+    "thumbnail": "https://i.ytimg.com/vi/cVy38wMRcnI/hqdefault.jpg"
   }
 ];
