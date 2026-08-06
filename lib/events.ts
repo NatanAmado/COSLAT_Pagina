@@ -8,6 +8,13 @@ export type EventItem = {
 
 export const events: EventItem[] = [
   {
+    title: "Asamblea Introductoria",
+    date: "09 AGO 2026 · 4:00 PM",
+    location: "Online (Discord)",
+    tag: "asamblea",
+    link: "https://discord.gg/HhNaHtpmd?event=1534605601278001203",
+  },
+  {
     title: "Reunión introductoria",
     date: "15 FEB 2026 · 5:00 PM",
     location: "Online (Discord)",
