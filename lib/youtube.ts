@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-08-06T15:10:37.968Z";
+export const youtubeUpdatedAt = "2026-08-07T14:10:42.022Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "bKTWs2bYs04",
+    "title": "¿Por qué los ALIENS SIEMPRE llegan a USA en las películas?",
+    "published": "2026-08-07T01:37:57+00:00",
+    "url": "https://www.youtube.com/shorts/bKTWs2bYs04",
+    "thumbnail": "https://i.ytimg.com/vi/bKTWs2bYs04/hqdefault.jpg"
+  },
   {
     "id": "rAT9A3rf-jg",
     "title": "La IA que está DESTRUYENDO libros (y nadie habla de esto)",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-07-26T00:59:21+00:00",
     "url": "https://www.youtube.com/shorts/0aNYzTkNcpc",
     "thumbnail": "https://i.ytimg.com/vi/0aNYzTkNcpc/hqdefault.jpg"
-  },
-  {
-    "id": "cVy38wMRcnI",
-    "title": "🇵🇾 El único país de América Latina que no le debía nada a nadie. Lo destruyeron por eso.",
-    "published": "2026-07-11T14:48:25+00:00",
-    "url": "https://www.youtube.com/shorts/cVy38wMRcnI",
-    "thumbnail": "https://i.ytimg.com/vi/cVy38wMRcnI/hqdefault.jpg"
   }
 ];
