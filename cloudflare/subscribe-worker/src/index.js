@@ -71,7 +71,7 @@ export default {
           type: "regular",
           ip_address: ipAddress || undefined,
           tags: ["coslat"],
-          source: "coslat-web",
+          metadata: { source: "coslat-web" },
         }),
       });
 
