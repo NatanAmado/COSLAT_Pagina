@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-08-09T13:46:01.234Z";
+export const youtubeUpdatedAt = "2026-08-10T14:18:27.216Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "_eTwR4SYXZQ",
+    "title": "Nada de lo que ves es real.",
+    "published": "2026-08-09T18:12:31+00:00",
+    "url": "https://www.youtube.com/shorts/_eTwR4SYXZQ",
+    "thumbnail": "https://i.ytimg.com/vi/_eTwR4SYXZQ/hqdefault.jpg"
+  },
   {
     "id": "bKTWs2bYs04",
     "title": "¿Por qué los ALIENS SIEMPRE llegan a USA en las películas?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-07-28T15:41:23+00:00",
     "url": "https://www.youtube.com/shorts/Zn8LvZTibNU",
     "thumbnail": "https://i.ytimg.com/vi/Zn8LvZTibNU/hqdefault.jpg"
-  },
-  {
-    "id": "0aNYzTkNcpc",
-    "title": "Así decide un algoritmo lo que vas a pensar",
-    "published": "2026-07-26T00:59:21+00:00",
-    "url": "https://www.youtube.com/shorts/0aNYzTkNcpc",
-    "thumbnail": "https://i.ytimg.com/vi/0aNYzTkNcpc/hqdefault.jpg"
   }
 ];
