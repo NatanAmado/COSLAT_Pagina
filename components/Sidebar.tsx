@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Cpu, Globe, Users, Target, Menu, CalendarRange, FolderGit2, X } from "@/components/icons";
+import { Cpu, Globe, Users, Target, Menu, CalendarRange, FolderGit2, ShieldCheck, X } from "@/components/icons";
 import type { Route } from "next";
 
 export default function Sidebar() {
@@ -15,6 +15,7 @@ export default function Sidebar() {
     { name: "FINES", href: "/#fines", icon: <Target size={20} /> },
     { name: "EVENTOS", href: "/eventos", icon: <CalendarRange size={20} /> },
     { name: "PROYECTOS", href: "/proyectos", icon: <FolderGit2 size={20} /> },
+    { name: "REGLAS", href: "/reglas-de-participacion", icon: <ShieldCheck size={20} /> },
   ];
 
   return (
