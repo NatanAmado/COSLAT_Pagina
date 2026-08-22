@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-08-21T13:41:40.979Z";
+export const youtubeUpdatedAt = "2026-08-22T13:28:19.926Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "d6VDPmfnpT0",
+    "title": "Usar Google MAPS hace tu CEREBRO más PEQUEÑO",
+    "published": "2026-08-22T01:26:27+00:00",
+    "url": "https://www.youtube.com/shorts/d6VDPmfnpT0",
+    "thumbnail": "https://i.ytimg.com/vi/d6VDPmfnpT0/hqdefault.jpg"
+  },
   {
     "id": "_eTwR4SYXZQ",
     "title": "Nada de lo que ves es real.",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-07-31T23:17:40+00:00",
     "url": "https://www.youtube.com/shorts/rLRDlQjzqcM",
     "thumbnail": "https://i.ytimg.com/vi/rLRDlQjzqcM/hqdefault.jpg"
-  },
-  {
-    "id": "Zn8LvZTibNU",
-    "title": "Corea del Sur era más pobre que tu país. Esto es lo que hicieron distinto.",
-    "published": "2026-07-28T15:41:23+00:00",
-    "url": "https://www.youtube.com/shorts/Zn8LvZTibNU",
-    "thumbnail": "https://i.ytimg.com/vi/Zn8LvZTibNU/hqdefault.jpg"
   }
 ];
