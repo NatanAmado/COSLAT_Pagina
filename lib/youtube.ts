@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-08-25T13:45:22.224Z";
+export const youtubeUpdatedAt = "2026-08-26T13:51:45.584Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "-N5Wje2RlKc",
+    "title": "Los PRESIDENTES de LATAM están GANANDO con CUENTAS FALSAS?",
+    "published": "2026-08-26T01:08:08+00:00",
+    "url": "https://www.youtube.com/shorts/-N5Wje2RlKc",
+    "thumbnail": "https://i.ytimg.com/vi/-N5Wje2RlKc/hqdefault.jpg"
+  },
   {
     "id": "d6VDPmfnpT0",
     "title": "Usar Google MAPS hace tu CEREBRO más PEQUEÑO",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-08-03T23:05:41+00:00",
     "url": "https://www.youtube.com/shorts/rAT9A3rf-jg",
     "thumbnail": "https://i.ytimg.com/vi/rAT9A3rf-jg/hqdefault.jpg"
-  },
-  {
-    "id": "rLRDlQjzqcM",
-    "title": "Nadie te dijo esto sobre tus selfies (y la IA)",
-    "published": "2026-07-31T23:17:40+00:00",
-    "url": "https://www.youtube.com/shorts/rLRDlQjzqcM",
-    "thumbnail": "https://i.ytimg.com/vi/rLRDlQjzqcM/hqdefault.jpg"
   }
 ];
