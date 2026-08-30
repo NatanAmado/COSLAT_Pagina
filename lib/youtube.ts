@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-08-29T16:57:42.452Z";
+export const youtubeUpdatedAt = "2026-08-30T17:10:41.010Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "-GBY1eOFEEU",
+    "title": "La Empresa ISRAELÍ Que MANIPULÓ Las ELECCIONES de LATINOAMÉRICA",
+    "published": "2026-08-30T00:26:35+00:00",
+    "url": "https://www.youtube.com/shorts/-GBY1eOFEEU",
+    "thumbnail": "https://i.ytimg.com/vi/-GBY1eOFEEU/hqdefault.jpg"
+  },
   {
     "id": "-N5Wje2RlKc",
     "title": "Los PRESIDENTES de LATAM están GANANDO con CUENTAS FALSAS?",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-08-07T01:37:57+00:00",
     "url": "https://www.youtube.com/shorts/bKTWs2bYs04",
     "thumbnail": "https://i.ytimg.com/vi/bKTWs2bYs04/hqdefault.jpg"
-  },
-  {
-    "id": "rAT9A3rf-jg",
-    "title": "La IA que está DESTRUYENDO libros (y nadie habla de esto)",
-    "published": "2026-08-03T23:05:41+00:00",
-    "url": "https://www.youtube.com/shorts/rAT9A3rf-jg",
-    "thumbnail": "https://i.ytimg.com/vi/rAT9A3rf-jg/hqdefault.jpg"
   }
 ];
