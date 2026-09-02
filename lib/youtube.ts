@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-09-01T17:08:03.516Z";
+export const youtubeUpdatedAt = "2026-09-02T16:58:32.588Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "5PwWsysMenY",
+    "title": "Las empresas de TECNOLOGÍA quieren que NO TENGAS NADA",
+    "published": "2026-09-01T23:05:53+00:00",
+    "url": "https://www.youtube.com/shorts/5PwWsysMenY",
+    "thumbnail": "https://i.ytimg.com/vi/5PwWsysMenY/hqdefault.jpg"
+  },
   {
     "id": "-GBY1eOFEEU",
     "title": "La Empresa ISRAELÍ Que MANIPULÓ Las ELECCIONES de LATINOAMÉRICA",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-08-09T18:12:31+00:00",
     "url": "https://www.youtube.com/shorts/_eTwR4SYXZQ",
     "thumbnail": "https://i.ytimg.com/vi/_eTwR4SYXZQ/hqdefault.jpg"
-  },
-  {
-    "id": "bKTWs2bYs04",
-    "title": "¿Por qué los ALIENS SIEMPRE llegan a USA en las películas?",
-    "published": "2026-08-07T01:37:57+00:00",
-    "url": "https://www.youtube.com/shorts/bKTWs2bYs04",
-    "thumbnail": "https://i.ytimg.com/vi/bKTWs2bYs04/hqdefault.jpg"
   }
 ];
