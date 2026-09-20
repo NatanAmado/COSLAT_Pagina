@@ -6,9 +6,16 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-09-19T16:12:40.192Z";
+export const youtubeUpdatedAt = "2026-09-20T16:40:46.992Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
+  {
+    "id": "I-xhhoMD4CA",
+    "title": "META AHORA tiene acceso a TODO.",
+    "published": "2026-09-20T13:46:53+00:00",
+    "url": "https://www.youtube.com/shorts/I-xhhoMD4CA",
+    "thumbnail": "https://i.ytimg.com/vi/I-xhhoMD4CA/hqdefault.jpg"
+  },
   {
     "id": "5PwWsysMenY",
     "title": "Las empresas de TECNOLOGÍA quieren que NO TENGAS NADA",
@@ -36,12 +43,5 @@ export const youtubeVideos: YoutubeVideo[] = [
     "published": "2026-08-22T01:26:27+00:00",
     "url": "https://www.youtube.com/shorts/d6VDPmfnpT0",
     "thumbnail": "https://i.ytimg.com/vi/d6VDPmfnpT0/hqdefault.jpg"
-  },
-  {
-    "id": "_eTwR4SYXZQ",
-    "title": "Nada de lo que ves es real.",
-    "published": "2026-08-09T18:12:31+00:00",
-    "url": "https://www.youtube.com/shorts/_eTwR4SYXZQ",
-    "thumbnail": "https://i.ytimg.com/vi/_eTwR4SYXZQ/hqdefault.jpg"
   }
 ];
