@@ -6,7 +6,7 @@ export type YoutubeVideo = {
   published: string;
 };
 
-export const youtubeUpdatedAt = "2026-11-06T19:50:04.431Z";
+export const youtubeUpdatedAt = "2026-11-07T17:56:20.741Z";
 
 export const youtubeVideos: YoutubeVideo[] = [
   {
